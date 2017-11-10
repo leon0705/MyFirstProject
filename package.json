@@ -1,20 +1,31 @@
 {
-  "dependencies": {
-    "gulp-concat": "^2.6.1",
-    "gulp-uglify": "^3.0.0"
+  "devDependencies": {
+    "gulp": "^3.9.1"
   },
   "name": "mlg",
+  "description": "",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "directories": {
     "doc": "doc"
   },
-  "devDependencies": {},
+  "dependencies": {
+    "_gulp-concat@2.6.1@gulp-concat": "^2.6.1",
+    "_gulp-rename@1.2.2@gulp-rename": "^1.2.2",
+    "_gulp-uglify@3.0.0@gulp-uglify": "^3.0.0",
+    "_gulp-sass@3.1.0@gulp-sass": "^3.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon0705/MyFirstProject.git"
+  },
+  "author": "LeiHao",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/leon0705/MyFirstProject/issues"
+  },
+  "homepage": "https://github.com/leon0705/MyFirstProject#readme"
 }
