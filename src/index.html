@@ -15,28 +15,31 @@
 		</header>
 
 		<div class="footer" id="footer">
-		
+
 		</div>
 	</body>
 	<script src="./js/jquery-3.2.1.js"></script>
 	<script>
 		jQuery(function($) {
-			//顶部hover效果
-			$('.rg').on('mouseenter', '.mygou', function() {
-				$(this).addClass('on').find('.noneCon').stop().slideDown(500);
-			}).on('mouseleave', '.mygou', function() {
-				let self = $(this);
-				$(this).find('.noneCon').stop().slideUp(500,function(){
-					self.removeClass('on')
-				})
-			})
+
 			//载入footer 和 header
-			$('#footer').load('./html/common_footer.html',function(){
+			$('header').load('./html/common_header.html', function() {console.log(777)
+
+				//顶部hover效果
+				$('.rg').on('mouseenter', '.mygou', function() {console.log(666)
+					$(this).addClass('on').find('.noneCon').stop().slideDown(500);
+				}).on('mouseleave', '.mygou', function() {
+					let self = $(this);
+					$(this).find('.noneCon').stop().slideUp(500, function() {
+						self.removeClass('on')
+					})
+				})
 				
 			})
-			$('header').load('./html/common_header.html',function(){
-				
+			$('#footer').load('./html/common_footer.html', function() {
+
 			})
+
 		})
 	</script>
 
