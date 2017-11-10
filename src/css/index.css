@@ -1,3 +1,103 @@
+@charset "UTF-8";
+/* 
+@名称: base 
+@功能: 重设浏览器默认样式 
+*/
+html { color: black; background: white; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; }
+
+body, button, input, select, textarea { font: 12px arial; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+input, select, textarea { font-size: 100%; resize: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+th { text-align: inherit; }
+
+fieldset, img { border: none; }
+
+iframe { display: block; }
+
+abbr, acronym { border: none; font-variant: normal; }
+
+del { text-decoration: line-through; }
+
+address, caption, cite, code, dfn, em, th, var { font-style: normal; font-weight: 500; }
+
+ol, ul { list-style: none; }
+
+caption, th { text-align: left; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 500; }
+
+q:before, q:after { content: ''; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+ins, a { text-decoration: none; color: #666; }
+
+a:hover { text-decoration: none; color: #CB3415; /*transition: .2s linear; -webkit-transition: .2s linear; -moz-transition: .2s linear; -ms-transition: .2s linear;*/ }
+
+a:focus, *:focus { outline: none; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+
+.clearfix:after { clear: both; overflow: hidden; }
+
+.clearfix { zoom: 1; /* for IE6 IE7 */ }
+
+.clear { clear: both; }
+
+.hide { display: none !important; visibility: hidden; }
+
+.block { display: block !important; }
+
+.fl, .head-top .search-ind { float: left; display: inline; }
+
+.fr { float: right; display: inline; }
+
+.tahoma { font-family: "tahoma"; }
+
+.overhide { overflow: hidden; }
+
+img[width="1190"] { max-height: 200px; }
+
+/*通用宽度*/
+.article { width: 1190px; margin: 0 auto; overflow: hidden; }
+
+.mtop30 { margin-top: 30px; }
+
+.mtop25 { margin-top: 25px; }
+
+.mtop15 { margin-top: 15px; }
+
+.mtop10 { margin-top: 10px; }
+
+.red { /*color: #ff2400 !important;*/ }
+
+/*页面背景色*/
+.bgGrey_body { background: #f3f3f3; }
+
+/*字体加粗*/
+.bold { font-weight: bold; }
+
+/*内容*/
+section.content { width: 1190px; margin: 0 auto; }
+
+section.content.zoom { width: 1190px; margin: 0 auto; }
+
+/*line*/
+.maxLine { width: 100%; height: 1px; background: #ddd; border-bottom: 1px solid #fff; }
+
+@media only screen and (min-width: 0px) and (max-width: 1189px) { section.content.zoom { width: 990px; margin: 0 auto; } }
+
 .fl, .head-top .search-ind { float: left; display: inline; }
 
 .fr { float: right; display: inline; }
@@ -60,11 +160,11 @@ body { margin: 0; padding: 0; }
 
 .site-top div.rg div.mygou ul { list-style: none; }
 
-.site-top div.rg div.mygou ul.noneCon { margin: 0; font-size: 12px; list-style: none; position: absolute; left: -1px; top: 36px; border: 1px solid #ccc; background: #fff; z-index: 2; border-top: none; padding: 0 0 5px 10px; }
+.site-top div.rg div.mygou ul.noneCon { margin: 0; font-size: 12px; list-style: none; position: absolute; left: 0px; top: 36px; border: 1px solid #ccc; background: #fff; z-index: 2; border-top: none; padding: 0 0 5px 10px; }
 
 .site-top div.rg div.mygou ul.noneCon li { font-size: 12px; list-style: none; width: 87px; height: 24px; line-height: 24px; }
 
-.site-top div.rg div.mygou div.noneCon { position: absolute; left: -151px; top: 34px; border: 1px solid #ccc; background: #fff; z-index: 2; border-top: none; padding: 4px 0; display: none; width: 240px; height: auto; }
+.site-top div.rg div.mygou div.noneCon { position: absolute; left: -150px; top: 34px; border: 1px solid #ccc; background: #fff; z-index: 2; border-top: none; padding: 4px 0; display: none; width: 240px; height: auto; }
 
 .site-top div.rg div.mygou div.noneCon img { border: none; vertical-align: top; }
 
@@ -119,3 +219,61 @@ nav .navMain .nav-cart a i.icon-cart { padding: 3px 10px; margin-right: 10px; ba
 nav .navMain .nc-left { line-height: 34px; text-align: center; }
 
 nav .menuBox { position: relative; margin: 0; width: 180px; }
+
+.footer .promise { border-top: 1px solid #E4E4E4; padding: 20px 0; border-bottom: 1px solid #E4E4E4; width: 100%; margin-top: 0; }
+
+.footer { background: #fff; }
+
+.footer .promise .article { overflow: hidden; width: 1190px; margin: 0 auto; }
+
+.footer .promise .article dl { overflow: hidden; float: left; }
+
+.footer .promise .article dl span { display: block; float: left; width: 45px; height: 45px; background: url(../css/img/icon_index.png) no-repeat; margin-right: 10px; }
+
+.footer .promise .article dl.pro1 { padding-left: 35px; width: 215px; }
+
+.footer .promise .article dl.pro1 .i1 { background-position: -58px -345px; }
+
+.footer .promise .article dl.pro2 { width: 245px; }
+
+.footer .promise .article dl.pro2 .i2 { background-position: -113px -345px; }
+
+.footer .promise .article dl.pro2 .i3 { background-position: -166px -345px; }
+
+.footer .promise .article dl.pro2 .i4 { background-position: -220px -345px; }
+
+.footer .promise .article dl.pro3 { width: 205px; }
+
+.footer .promise .article dl.pro3 .i5 { background-position: -274px -345px; }
+
+.footer .promise .article dl dt { font-size: 15px; font-weight: bold; line-height: 24px; float: left; width: 140px; }
+
+.footer .promise .article dl dd { line-height: 22px; color: #666; float: left; width: 140px; }
+
+.footer .article .forLink { padding: 30px 45px; overflow: hidden; }
+
+.footer .article .forLink dl { float: left; width: 200px; }
+
+.footer .article .forLink dl dt { font-weight: bold; font-size: 15px; height: 26px; }
+
+.footer .article .forLink dl dd { line-height: 20px; font-family: "microsoft yahei"; }
+
+.footer .article .forLink dl dd a { color: #666; }
+
+.footer .article .forLink .gouApp { float: left; text-align: center; }
+
+.footer .article .forLink .gouApp h3 { font-weight: bold; font-size: 15px; height: 26px; }
+
+.footer .about { background: #fff; padding-bottom: 15px; }
+
+.footer .about p { text-align: center; line-height: 24px; }
+
+.footer .about p.abLink { height: 35px; line-height: 35px; background: #444851; overflow: hidden; }
+
+.footer .about p.abLink a { color: #adadad; padding: 0 17px; }
+
+.footer .about p.abLink span { color: #555; }
+
+.footer .about .newcor { width: 990px; height: 62px; margin: 0 auto; padding-top: 21px; text-align: center; overflow: hidden; }
+
+.footer .about .newcor a img { display: inline-block; border: 1px solid #ccc; height: 60px; width: 112px; margin: 0 3px; }

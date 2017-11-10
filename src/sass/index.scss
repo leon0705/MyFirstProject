@@ -1,3 +1,4 @@
+@import "base";
 .fl {
     float: left;
     display: inline;
@@ -154,7 +155,7 @@ body {
                 font-size: 12px;
                 list-style: none;
                 position: absolute;
-                left: -1px;
+                left: 0px;
                 top: 36px;
                 border: 1px solid #ccc;
                 background: #fff;
@@ -171,7 +172,7 @@ body {
             }
             div.noneCon {
                 position: absolute;
-                left: -151px;
+                left: -150px;
                 top: 34px;
                 border: 1px solid #ccc;
                 background: #fff;
@@ -330,13 +331,12 @@ nav {
                 float: left;
                 height: 36px;
                 position: relative;
-                .on a{
+                .on a {
                     color: #CB351A;
                 }
                 a {
                     padding: 0 12px;
                     font-size: 16px;
-                    
                 }
             }
         }
@@ -355,7 +355,7 @@ nav {
                 i.icon-cart {
                     padding: 3px 10px;
                     margin-right: 10px;
-                    background: url(../css/img/icon_index.png) no-repeat scroll -139px 1px;    
+                    background: url(../css/img/icon_index.png) no-repeat scroll -139px 1px;
                 }
             }
         }
@@ -363,11 +363,148 @@ nav {
             line-height: 34px;
             text-align: center;
         }
-        
     }
     .menuBox {
         position: relative;
         margin: 0;
         width: 180px;
+    }
+}
+
+%foot_promise {
+    border-top: 1px solid #E4E4E4;
+    padding: 20px 0;
+    border-bottom: 1px solid #E4E4E4;
+    width: 100%;
+    margin-top: 0;
+}
+
+.footer {
+    background: #fff;
+    .promise {
+        @extend %foot_promise;
+        .article {
+            overflow: hidden;
+            width: 1190px;
+            margin: 0 auto;
+            dl {
+                overflow: hidden;
+                float: left;
+                span {
+                    display: block;
+                    float: left;
+                    width: 45px;
+                    height: 45px;
+                    background: url(../css/img/icon_index.png) no-repeat;
+                    margin-right: 10px;
+                }
+                //父级选择器
+                &.pro1 {
+                    padding-left: 35px;
+                    width: 215px;
+                    .i1 {
+                        background-position: -58px -345px;
+                    }
+                }
+                &.pro2 {
+                    width: 245px;
+                    .i2 {
+                        background-position: -113px -345px;
+                    }
+                    .i3 {
+                        background-position: -166px -345px;
+                    }
+                    .i4 {
+                        background-position: -220px -345px;
+                    }
+                }
+                &.pro3 {
+                    width: 205px;
+                    .i5 {
+                        background-position: -274px -345px;
+                    }
+                }
+                dt {
+                    font-size: 15px;
+                    font-weight: bold;
+                    line-height: 24px;
+                    float: left;
+                    width: 140px;
+                }
+                dd {
+                    line-height: 22px;
+                    color: #666;
+                    float: left;
+                    width: 140px;
+                }
+            }
+        }
+    }
+    .article {
+        .forLink {
+            padding: 30px 45px;
+            overflow: hidden;
+            dl {
+                float: left;
+                width: 200px;
+                dt {
+                    font-weight: bold;
+                    font-size: 15px;
+                    height: 26px;
+                }
+                dd {
+                    line-height: 20px;
+                    font-family: "microsoft yahei";
+                    a {
+                        color: #666;
+                    }
+                }
+            }
+            .gouApp {
+                float: left;
+                text-align: center;
+                h3 {
+                    font-weight: bold;
+                    font-size: 15px;
+                    height: 26px;
+                }
+            }
+        }
+    }
+    .about {
+        background: #fff;
+        padding-bottom: 15px;
+        p {
+            text-align: center;
+            line-height: 24px;
+            &.abLink {
+                height: 35px;
+                line-height: 35px;
+                background: #444851;
+                overflow:hidden;
+                a {
+                    color: #adadad;
+                    padding: 0 17px;
+                }
+                span {
+                    color: #555;
+                }
+            }
+        }
+        .newcor {
+            width: 990px;
+            height: 62px;
+            margin: 0 auto;
+            padding-top: 21px;
+            text-align: center;
+            overflow: hidden;
+            a img {
+                display: inline-block ;
+                border: 1px solid #ccc;
+                height: 60px;
+                width: 112px;
+                margin: 0 3px;
+            }
+        }
     }
 }
