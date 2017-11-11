@@ -8,7 +8,7 @@ var gulp = require('gulp');
 
 //浏览器同步测试
 var browserSync = require('browser-sync');
-var reload      = browserSync.reload;
+var reload = browserSync.reload;
 
 //sass编译
 var sass = require('gulp-sass');
@@ -37,8 +37,10 @@ gulp.task('compileSass', function() {
 		}).on('error', sass.logError)) //编译sass文件
 
 		.pipe(gulp.dest('./src/css/')) //输出到硬盘
-		
-		.pipe(reload({stream:true}))	//重新载入
+
+		.pipe(reload({
+			stream: true
+		})) //重新载入
 });
 
 //监听文件的任务
@@ -47,7 +49,6 @@ gulp.task('ListenHomeSass', function() {
 	//如果有修改，则只需compileSass任务
 	gulp.watch(path.sass, ['compileSass'])
 })
-
 
 //js压缩重命名等
 gulp.task('mergeJS', function() {
@@ -82,12 +83,19 @@ gulp.task('b-server', function() {
 	});
 
 	gulp.watch('./src/sass/*.scss', ['compileSass']);
-//	gulp.watch('./src/js/*.js', ['script']);
-//	gulp.watch('./src/img/*.*', ['image']);
-//	gulp.watch('./src/html/*.html',['html']);
-	gulp.watch('./src/*.html').on('change',reload);
+	//	gulp.watch('./src/js/*.js', ['script']);
+	//	gulp.watch('./src/img/*.*', ['image']);
+	//	gulp.watch('./src/html/*.html',['html']);
+	gulp.watch('./src/*.html').on('change', reload);
 });
 
-gulp.task('default',['b-server']);
+//有自己的服务器时使用
+gulp.task('browser-sync', function() {
+	browserSync.init({
+		proxy: "http://localhost:5277"
+	});
+});
+
+gulp.task('default', ['b-server']);
 //运行任务
 //命令行输入（项目根目录下） ： gulp 任务名

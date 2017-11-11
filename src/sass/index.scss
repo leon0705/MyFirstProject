@@ -155,13 +155,13 @@ body {
                 font-size: 12px;
                 list-style: none;
                 position: absolute;
-                left: 0px;
+                left: -1px;
                 top: 36px;
                 border: 1px solid #ccc;
                 background: #fff;
                 z-index: 2;
                 border-top: none;
-                padding: 0 0 5px 10px;
+                padding: 0 0 5px 11px;
                 li {
                     font-size: 12px;
                     list-style: none;
@@ -368,6 +368,111 @@ nav {
         position: relative;
         margin: 0;
         width: 180px;
+        .nav-list {
+            position: relative;
+            width: 180px;
+            height: 480px;
+            overflow: hidden;
+            background: #cb3e25;
+            z-index: 32;
+            li {
+                position: relative;
+                border-bottom: 1px solid #b82f17;
+                border-top: 1px solid #da5a44;
+                height: 49px;
+                line-height: 20px;
+                font-size: 14px;
+                font-family: "microsoft yahei";
+                overflow: hidden;
+                padding: 1.2px 0;
+                i {
+                    display: inline-block;
+                    width: 39px;
+                    height: 49px;
+                    float: left;
+                    margin-right: 10px;
+                    font-size: 16px;
+                    text-align: right;
+                    text-decoration: none;
+                    background: url(../css/img/icon_index.png) no-repeat;
+                    transition: width .2s linear 0s;
+                    &.bg1 {
+                        background-position: right -50px;
+                    }
+                    &.bg2 {
+                        background-position: right -92px;
+                    }
+                    &.bg6 {
+                        background-position: right -266px;
+                    }
+                    &.bg3 {
+                        background-position: right -134px;
+                    }
+                    &.bg4 {
+                        background-position: right -179px;
+                    }
+                    &.bg5 {
+                        background-position: right -223px;
+                    }
+                    &.bg7 {
+                        background-position: right -310px;
+                    }
+                    &.bg9 {
+                        background-position: right -394px;
+                    }
+                    &.bg8 {
+                        background-position: right -350px;
+                    }
+                }
+                h3 {
+                    margin-top: 5px;
+                    a {
+                        color: #fff;
+                        font-family: "microsoft yahei";
+                    }
+                }
+                p {
+                    a {
+                        color: #eca598;
+                    }
+                }
+            }
+        }
+        .menu-con .sub-pannel {
+            display: none;
+            background: #fff;
+            box-shadow: 1px 0 2px #978d8d inset;
+            height: 480px;
+            left: 170px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            opacity: .5;
+            width: 400px;
+            z-index: 5;
+            font-family: "microsoft yahei";
+            .nelBox {
+                padding: 12px 8px 12px 15px;
+                line-height: 20px;
+                p {
+                    border-bottom: 1px dashed #ccc;
+                    padding-bottom: 8px;
+                    margin-bottom: 12px;
+                    font-family: "microsoft yahei";
+                    strong {
+                        display: block;
+                        font-size: 12px;
+                        font-weight: bold;
+                        height: 22px;
+                    }
+                    a {
+                        margin-right: 17px;
+                        line-height: 20px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -481,7 +586,7 @@ nav {
                 height: 35px;
                 line-height: 35px;
                 background: #444851;
-                overflow:hidden;
+                overflow: hidden;
                 a {
                     color: #adadad;
                     padding: 0 17px;
@@ -499,12 +604,278 @@ nav {
             text-align: center;
             overflow: hidden;
             a img {
-                display: inline-block ;
+                display: inline-block;
                 border: 1px solid #ccc;
                 height: 60px;
                 width: 112px;
                 margin: 0 3px;
             }
+        }
+    }
+}
+
+.gou-cart {
+    z-index: 201;
+    position: fixed;
+    right: 280px;
+    bottom: 0;
+    width: 315px;
+    height: 100%;
+    .whole {
+        height: 100%;
+        position: relative;
+        .bearImg {
+            width: 55px;
+            height: 75px;
+            position: absolute;
+            top: 5px;
+            left: -12px;
+            z-index: 20;
+            background-size: 100%;
+            img {
+                width: 75%;
+            }
+        }
+        .cart-nav {
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            right: 280;
+            width: 35px;
+            height: 100%;
+            font-family: 'microsoft yahei', arial;
+            background: #444851;
+            .cart-nav-list {
+                z-index: 2;
+                position: absolute;
+                top: 38%;
+                left: 0;
+                width: 35px;
+                margin-top: -190px;
+                background: #444851;
+                li {
+                    position: relative;
+                    &.kf {
+                        a {
+                            margin-bottom: 0;
+                            padding-bottom: 0;
+                            margin-top: -5px;
+                            .wxi {
+                                background: url(../css/img/wxIcon_white.png) no-repeat center;
+                            }
+                        }
+                        div.span {
+                            color: #F3F3F3;
+                            text-align: center;
+                            padding-bottom: 5px;
+                            margin-top: 0px;
+                        }
+                    }
+                }
+                a {
+                    z-index: 1;
+                    position: relative;
+                    top: 0;
+                    left: 0px;
+                    display: block;
+                    line-height: 200px;
+                    width: 35px;
+                    height: 30px;
+                    margin: 5px 0;
+                    padding: 0;
+                    text-decoration: none;
+                    color: #d8d8d8;
+                    font-size: 12px;
+                    background-color: #444851;
+                    overflow: hidden;
+                    &.aStair.on {
+                        background: #ca3619;
+                    }
+                    &.message_list {
+                        height: 133px;
+                        line-height: 16px;
+                        margin: 5px 0 5px;
+                        color: #fff;
+                        .span {
+                            display: block;
+                            width: 16px;
+                            height: 48px;
+                            margin: 38px 0 0 12px;
+                            cursor: pointer;
+                            color: #fff;
+                        }
+                        .cart_num {
+                            display: block;
+                            width: 21px;
+                            height: 21px;
+                            margin: 9px 0 0 7px;
+                            text-align: center;
+                            line-height: 21px;
+                            background: #CA3619;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            color: #fff;
+                        }
+                    }
+                    i {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 35px;
+                        height: 30px;
+                        background: url(../css/img/icon_index.png) no-repeat;
+                        &.account {
+                            background-position: -2px -90px;
+                        }
+                        &.message {
+                            background-position: -3px -139px;
+                        }
+                        &.servi {
+                            background-position: -2px -191px;
+                            cursor: default;
+                        }
+                        &.collection {
+                            background-position: -2px -233px;
+                        }
+                        &.view {
+                            background-position: -3px -278px;
+                        }
+                        &.payto {
+                            background-position: -2px -314px;
+                            cursor: default;
+                        }
+                        &.feedicon {
+                            background-position: -2px -350px;
+                        }
+                        &.backTop {
+                            background-position: -2px -390px;
+                            img {
+                                position: absolute;
+                                left: 3px;
+                                top: 2px;
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+                .txt-pro {
+                    position: absolute;
+                    left: 0;
+                    width: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #FFFFFF;
+                    background: #444851;
+                    a {
+                        display: inline;
+                        height: 100%;
+                        padding: 0;
+                        margin: 0;
+                        line-height: 30px;
+                        color: #fff;
+                    }
+                    .tactuslogin {
+                        position: relative;
+                        position: absolute;
+                        left: 18%;
+                        top: 55%;
+                        width: 50%;
+                        height: 10%;
+                        background: url(../css/img/icon_index.png) no-repeat -10000px 0;
+                        color: #999999;
+                        text-align: left;
+                    }
+                    .tactusImg {
+                        position: relative;
+                        .beforeTit {
+                            position: absolute;
+                            display: block;
+                            left: 19%;
+                            top: 24%;
+                            height: 22%;
+                            width: 70%;
+                            color: #333;
+                            font-size: 12px;
+                            white-space: normal;
+                            line-height: 16px;
+                            text-align: left;
+                            em {
+                                position: absolute;
+                                display: block;
+                                left: 0px;
+                                top: 50%;
+                                margin-top: -7px;
+                                height: 15px;
+                                line-height: 15px;
+                                width: 100%;
+                                text-align: center;
+                                font-size: 15px;
+                                color: #fff;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .tactus {
+                        width: 255px;
+                        overflow: hidden;
+                        padding: 0px 0 5px 10px;
+                        background: #444851;
+                        text-align: center;
+                    }
+                }
+            }
+            .cart-nav-list.bot {
+                top: auto;
+                bottom: 0px;
+            }
+            #backTop a {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.cart-main-list {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    background: #6A5A51;
+    .shopcar {
+        position: relative;
+        background: #DDDDDD;
+        height: 100%;
+        font-family: "microsoft yahei";
+    }
+}
+
+.nopublic {
+    height: 100%;
+    width: 100%;
+    background: #ddd;
+    overflow: hidden;
+    .nothing {
+        position: relative;
+        top: 40%;
+        height: 250px;
+        width: 220px;
+        margin: -220px auto 0;
+        color: #999;
+        font-size: 14px;
+        text-align: center;
+        .noicon {
+            background: url(../css/img/cartshop.png) no-repeat center;
+            width: 220px;
+            height: 220px;
+        }
+        a {
+            font-size: 16px;
+            line-height: 40px;
         }
     }
 }
