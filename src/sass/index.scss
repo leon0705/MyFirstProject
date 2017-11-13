@@ -176,7 +176,7 @@ body {
                 top: 34px;
                 border: 1px solid #ccc;
                 background: #fff;
-                z-index: 2;
+                z-index: 999;
                 border-top: none;
                 padding: 4px 0;
                 display: none;
@@ -192,7 +192,7 @@ body {
             background: #fff;
             border: 1px solid #ccc;
             border-bottom: none;
-            z-index: 28;
+            z-index: 999;
         }
         span {
             color: #ddd;

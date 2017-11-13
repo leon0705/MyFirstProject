@@ -164,11 +164,11 @@ body { margin: 0; padding: 0; }
 
 .site-top div.rg div.mygou ul.noneCon li { font-size: 12px; list-style: none; width: 87px; height: 24px; line-height: 24px; }
 
-.site-top div.rg div.mygou div.noneCon { position: absolute; left: -150px; top: 34px; border: 1px solid #ccc; background: #fff; z-index: 2; border-top: none; padding: 4px 0; display: none; width: 240px; height: auto; }
+.site-top div.rg div.mygou div.noneCon { position: absolute; left: -150px; top: 34px; border: 1px solid #ccc; background: #fff; z-index: 999; border-top: none; padding: 4px 0; display: none; width: 240px; height: auto; }
 
 .site-top div.rg div.mygou div.noneCon img { border: none; vertical-align: top; }
 
-.site-top div.rg .on { background: #fff; border: 1px solid #ccc; border-bottom: none; z-index: 28; }
+.site-top div.rg .on { background: #fff; border: 1px solid #ccc; border-bottom: none; z-index: 999; }
 
 .site-top div.rg span { color: #ddd; padding: 0 3px; margin: 0; font-size: 12px; }
 

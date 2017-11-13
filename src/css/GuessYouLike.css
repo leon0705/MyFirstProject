@@ -1,0 +1,47 @@
+.conTit { height: 38px; line-height: 46px; overflow: hidden; position: relative; margin-bottom: 3px; }
+
+.conTit h2 { float: left; font-size: 18px; margin-right: 10px; overflow: hidden; font-weight: bold; }
+
+.conTit h2 i.ilike { background: url(../css/img/icon_index.png) no-repeat; background-position: -199px -44px; }
+
+.conTit h2 i.iTit { display: block; float: left; width: 38px; height: 38px; margin-right: 5px; }
+
+.conTit span.subTit { font-size: 14px; float: left; padding-top: 3px; color: #999999; }
+
+.conTit span.babyAge { color: #f25954; margin-left: 30px; }
+
+.conTit .ageBox { position: absolute; left: 363px; width: 600px; }
+
+.conTit .ageBox .babydos { position: relative; top: 15px; left: 30px; line-height: 18px; color: #ffa1a1; }
+
+.conTit .ageBox .babydos a { position: relative; background: #ff9f9f; display: block; float: left; color: #fff; padding-right: 18px; margin-right: 5px; }
+
+.conTit .ageBox .babydos a i.editTxt { display: block; float: left; width: 22px; height: 18px; margin-right: 5px; border-right: #fff 1px solid; background: url(../css/img/icon_index.png) no-repeat; background-position: -179px 0; }
+
+.conTit .ageBox .babydos a span.arrow-r { position: absolute; display: block; height: 0; border-left: 4px solid #FFFFFF; border-top: 4px solid transparent; border-bottom: 4px solid transparent; right: 6px; top: 5px; }
+
+.conTit .ageBox .babydos font.reword { color: #7b7b7b; font-size: 14px; }
+
+.conTit .ageBox .babydos font.reword b { font-weight: bold; font-family: tahoma; color: #e92b00; }
+
+.guess { height: 450px; position: relative; }
+
+.guess .prev { width: 12px; height: 14px; background: url(../css/img/icon_index.png) no-repeat; background-position: -336px 0px; float: left; }
+
+.guess .next { width: 12px; height: 14px; background: url(../css/img/icon_index.png) no-repeat; background-position: -348px 0px; float: right; }
+
+.guess .boxleft { position: absolute; left: 2px; opacity: 0.6; top: 183px; width: 27px; background-position: -201px -125px; background: url(../css/img/icon_index.png) no-repeat; height: 84px; z-index: 10; }
+
+.guess .boxright { position: absolute; right: 2px; opacity: 0.6; top: 183px; width: 27px; height: 84px; z-index: 10; background-position: -258px -125px; background: url(../css/img/icon_index.png) no-repeat; }
+
+.guess .gs { position: absolute; right: 10px; top: -22px; z-index: 20; }
+
+.guess .gs font.red { color: #F95D5E; line-height: 14px; }
+
+.guess .gs font.red .prev { width: 12px; height: 14px; background: url(../css/img/icon_index.png) no-repeat; background-position: -336px 0px; float: left; }
+
+.guess .gs font.red .next { width: 12px; height: 14px; background: url(../css/img/icon_index.png) no-repeat; background-position: -348px 0px; float: right; }
+
+.guess .guess-m { overflow: hidden; position: relative; height: 900px; }
+
+.guess .guess-m ul { float: left; width: 1200px; height: 450px; overflow: hidden; }
