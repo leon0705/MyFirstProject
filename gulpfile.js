@@ -29,18 +29,20 @@ gulp.task('compileSass', function() {
 
 	//匹配多个文件可以使用gulp.src(['./src/sass/*.scss'])
 	//如果不需要某几个可以这样gulp.src(['./src/sass/*.scss','！XXX文件'])
+	setTimeout(function() {
+			return gulp.src('./src/sass/*.scss') //得到文件流(文件在内存中的状态)
 
-	gulp.src(path.sass) //得到文件流(文件在内存中的状态)
+				.pipe(sass({
+					outputStyle: 'compact'
+				}).on('error', sass.logError)) //编译sass文件
 
-		.pipe(sass({
-			outputStyle: 'compact'
-		}).on('error', sass.logError)) //编译sass文件
+				.pipe(gulp.dest('./src/css/')) //输出到硬盘
 
-		.pipe(gulp.dest('./src/css/')) //输出到硬盘
+//				.pipe(reload({
+//					stream: true
+//				})) //重新载入
+		},500);
 
-		.pipe(reload({
-			stream: true
-		})) //重新载入
 });
 
 //监听文件的任务
@@ -73,29 +75,39 @@ gulp.task('mergeJS', function() {
 })
 
 //浏览器同步测试
-gulp.task('b-server', function() {
-	browserSync({
-		server: {
-			baseDir: ['./src']
-		},
-	}, function(err, bs) {
-		console.log(bs.options.getIn(["urls", "local"]));
-	});
-
-	gulp.watch('./src/sass/*.scss', ['compileSass']);
-	//	gulp.watch('./src/js/*.js', ['script']);
-	//	gulp.watch('./src/img/*.*', ['image']);
-	//	gulp.watch('./src/html/*.html',['html']);
-	gulp.watch('./src/*.html').on('change', reload);
-});
+//gulp.task('b-server', function() {
+//	browserSync({
+//		server: {
+//			baseDir: ['./src']
+//		},
+//	}, function(err, bs) {
+//		console.log(bs.options.getIn(["urls", "local"]));
+//	});
+//
+//	gulp.watch('./src/sass/*.scss', ['compileSass']);
+//	//	gulp.watch('./src/js/*.js', ['script']);
+//	//	gulp.watch('./src/img/*.*', ['image']);
+//	//	gulp.watch('./src/html/*.html',['html']);
+//	gulp.watch('./src/*.html').on('change', reload);
+//});
 
 //有自己的服务器时使用
 gulp.task('browser-sync', function() {
-	browserSync.init({
-		proxy: "http://localhost:5277"
+	browserSync({
+		
+		proxy: "http://localhost:5277",
+
+		port: 5277,
+
+		files: ['./src/**/*.html', './src/css/*.css', './src/api/*.php']
+
 	});
+
+	//开启服务器的同时，监听sass的修改
+	gulp.watch('./src/**/*.scss', ['compileSass']);
+
 });
 
-gulp.task('default', ['b-server']);
+//gulp.task('default', ['b-server']);
 //运行任务
 //命令行输入（项目根目录下） ： gulp 任务名

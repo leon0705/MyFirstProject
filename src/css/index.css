@@ -160,7 +160,7 @@ body { margin: 0; padding: 0; }
 
 .site-top div.rg div.mygou ul { list-style: none; }
 
-.site-top div.rg div.mygou ul.noneCon { margin: 0; font-size: 12px; list-style: none; position: absolute; left: -1px; top: 36px; border: 1px solid #ccc; background: #fff; z-index: 2; border-top: none; padding: 0 0 5px 11px; }
+.site-top div.rg div.mygou ul.noneCon { margin: 0; font-size: 12px; list-style: none; position: absolute; left: -1px; top: 36px; border: 1px solid #ccc; background: #fff; z-index: 9999; border-top: none; padding: 0 0 5px 11px; }
 
 .site-top div.rg div.mygou ul.noneCon li { font-size: 12px; list-style: none; width: 87px; height: 24px; line-height: 24px; }
 
@@ -198,67 +198,69 @@ body { margin: 0; padding: 0; }
 
 .head-top .topAd img { width: 200px; height: 90px; margin-top: 15px; }
 
-nav .nav_ind, nav .navMain { width: 1190px; margin: 0 auto; line-height: 36px; height: 36px; background: #fff; border: none; display: block; }
+.nav_ind, .nav_ind .navMain { width: 1190px; margin: 0 auto; line-height: 36px; height: 36px; background: #fff; border: none; }
 
-nav .navMain .open-menu-btn { width: 180px; text-align: center; background: #CB351A; font-size: 15px; line-height: 36px; height: 36px; float: left; color: #fff; }
+.nav_ind .navMain .article { width: 1190px; margin: 0 auto; overflow: hidden; }
 
-nav .navMain .navMain-list { float: left; height: 36px; line-height: 36px; position: relative; list-style: none; margin: 0; padding: 0; }
+.nav_ind .navMain .article .open-menu-btn { width: 180px; text-align: center; background: #CB351A; font-size: 15px; line-height: 36px; height: 36px; float: left; color: #fff; }
 
-nav .navMain .navMain-list li { list-style: none; float: left; height: 36px; position: relative; }
+.nav_ind .navMain .article .navMain-list { float: left; height: 36px; line-height: 36px; position: relative; list-style: none; margin: 0; padding: 0; }
 
-nav .navMain .navMain-list li .on a { color: #CB351A; }
+.nav_ind .navMain .article .navMain-list li { list-style: none; float: left; height: 36px; position: relative; }
 
-nav .navMain .navMain-list li a { padding: 0 12px; font-size: 16px; }
+.nav_ind .navMain .article .navMain-list li .on a { color: #CB351A; }
 
-nav .navMain .nav-cart { float: right; width: 198px; height: 34px; line-height: 34px; background: #f9f9f9; border: 1px solid #e4e4e4; text-align: center; }
+.nav_ind .navMain .article .navMain-list li a { padding: 0 12px; font-size: 16px; }
 
-nav .navMain .nav-cart a { color: #7a7a7a; display: block; font-size: 12px; }
+.nav_ind .navMain .article .nav-cart { float: right; width: 198px; height: 34px; line-height: 34px; background: #f9f9f9; border: 1px solid #e4e4e4; text-align: center; }
 
-nav .navMain .nav-cart a i.icon-cart { padding: 3px 10px; margin-right: 10px; background: url(../css/img/icon_index.png) no-repeat scroll -139px 1px; }
+.nav_ind .navMain .article .nav-cart a { color: #7a7a7a; display: block; font-size: 12px; }
 
-nav .navMain .nc-left { line-height: 34px; text-align: center; }
+.nav_ind .navMain .article .nav-cart a i.icon-cart { padding: 3px 10px; margin-right: 10px; background: url(../css/img/icon_index.png) no-repeat scroll -139px 1px; }
 
-nav .menuBox { position: relative; margin: 0; width: 180px; }
+.nav_ind .navMain .article .nav-cart .nc-left { line-height: 34px; text-align: center; }
 
-nav .menuBox .nav-list { position: relative; width: 180px; height: 480px; overflow: hidden; background: #cb3e25; z-index: 32; }
+.nav_ind .menuBox { position: relative; margin: 0; width: 180px; }
 
-nav .menuBox .nav-list li { position: relative; border-bottom: 1px solid #b82f17; border-top: 1px solid #da5a44; height: 49px; line-height: 20px; font-size: 14px; font-family: "microsoft yahei"; overflow: hidden; padding: 1.2px 0; }
+.nav_ind .menuBox .nav-list { position: relative; width: 180px; height: 480px; overflow: hidden; background: #cb3e25; z-index: 32; }
 
-nav .menuBox .nav-list li i { display: inline-block; width: 39px; height: 49px; float: left; margin-right: 10px; font-size: 16px; text-align: right; text-decoration: none; background: url(../css/img/icon_index.png) no-repeat; transition: width .2s linear 0s; }
+.nav_ind .menuBox .nav-list li { position: relative; border-bottom: 1px solid #b82f17; border-top: 1px solid #da5a44; height: 49px; line-height: 20px; font-size: 14px; font-family: "microsoft yahei"; overflow: hidden; padding: 1.2px 0; }
 
-nav .menuBox .nav-list li i.bg1 { background-position: right -50px; }
+.nav_ind .menuBox .nav-list li i { display: inline-block; width: 39px; height: 49px; float: left; margin-right: 10px; font-size: 16px; text-align: right; text-decoration: none; background: url(../css/img/icon_index.png) no-repeat; transition: width .2s linear 0s; }
 
-nav .menuBox .nav-list li i.bg2 { background-position: right -92px; }
+.nav_ind .menuBox .nav-list li i.bg1 { background-position: right -50px; }
 
-nav .menuBox .nav-list li i.bg6 { background-position: right -266px; }
+.nav_ind .menuBox .nav-list li i.bg2 { background-position: right -92px; }
 
-nav .menuBox .nav-list li i.bg3 { background-position: right -134px; }
+.nav_ind .menuBox .nav-list li i.bg6 { background-position: right -266px; }
 
-nav .menuBox .nav-list li i.bg4 { background-position: right -179px; }
+.nav_ind .menuBox .nav-list li i.bg3 { background-position: right -134px; }
 
-nav .menuBox .nav-list li i.bg5 { background-position: right -223px; }
+.nav_ind .menuBox .nav-list li i.bg4 { background-position: right -179px; }
 
-nav .menuBox .nav-list li i.bg7 { background-position: right -310px; }
+.nav_ind .menuBox .nav-list li i.bg5 { background-position: right -223px; }
 
-nav .menuBox .nav-list li i.bg9 { background-position: right -394px; }
+.nav_ind .menuBox .nav-list li i.bg7 { background-position: right -310px; }
 
-nav .menuBox .nav-list li i.bg8 { background-position: right -350px; }
+.nav_ind .menuBox .nav-list li i.bg9 { background-position: right -394px; }
 
-nav .menuBox .nav-list li h3 { margin-top: 5px; }
+.nav_ind .menuBox .nav-list li i.bg8 { background-position: right -350px; }
 
-nav .menuBox .nav-list li h3 a { color: #fff; font-family: "microsoft yahei"; }
+.nav_ind .menuBox .nav-list li h3 { margin-top: 5px; }
 
-nav .menuBox .nav-list li p a { color: #eca598; }
+.nav_ind .menuBox .nav-list li h3 a { color: #fff; font-family: "microsoft yahei"; }
 
-nav .menuBox .menu-con .sub-pannel { display: none; background: #fff; box-shadow: 1px 0 2px #978d8d inset; height: 480px; left: 170px; overflow: hidden; position: absolute; top: 0; opacity: .5; width: 400px; z-index: 5; font-family: "microsoft yahei"; }
+.nav_ind .menuBox .nav-list li p a { color: #eca598; }
 
-nav .menuBox .menu-con .sub-pannel .nelBox { padding: 12px 8px 12px 15px; line-height: 20px; }
+.nav_ind .menuBox .menu-con .sub-pannel { display: none; background: #fff; box-shadow: 1px 0 2px #978d8d inset; height: 480px; left: 170px; overflow: hidden; position: absolute; top: 0; opacity: .5; width: 400px; z-index: 5; font-family: "microsoft yahei"; }
 
-nav .menuBox .menu-con .sub-pannel .nelBox p { border-bottom: 1px dashed #ccc; padding-bottom: 8px; margin-bottom: 12px; font-family: "microsoft yahei"; }
+.nav_ind .menuBox .menu-con .sub-pannel .nelBox { padding: 12px 8px 12px 15px; line-height: 20px; }
 
-nav .menuBox .menu-con .sub-pannel .nelBox p strong { display: block; font-size: 12px; font-weight: bold; height: 22px; }
+.nav_ind .menuBox .menu-con .sub-pannel .nelBox p { border-bottom: 1px dashed #ccc; padding-bottom: 8px; margin-bottom: 12px; font-family: "microsoft yahei"; }
 
-nav .menuBox .menu-con .sub-pannel .nelBox p a { margin-right: 17px; line-height: 20px; display: inline-block; }
+.nav_ind .menuBox .menu-con .sub-pannel .nelBox p strong { display: block; font-size: 12px; font-weight: bold; height: 22px; }
+
+.nav_ind .menuBox .menu-con .sub-pannel .nelBox p a { margin-right: 17px; line-height: 20px; display: inline-block; }
 
 .footer .promise { border-top: 1px solid #E4E4E4; padding: 20px 0; border-bottom: 1px solid #E4E4E4; width: 100%; margin-top: 0; }
 

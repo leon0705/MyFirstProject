@@ -1,0 +1,23 @@
+@import "base";
+.banAds {
+    overflow: hidden;
+    a {
+        display: block;
+        width: 580px;
+        margin-right: 10px;
+        float: left;
+        &.last {
+            margin-right: 0;
+        }
+        img { 
+            width: 590px;
+            max-height: 400px;
+        }
+    }
+}
+
+.tescol {
+    float: left;
+    width: 1190px;
+    overflow: hidden;
+}

@@ -1,0 +1,22 @@
+@import "base";
+.carousel {
+    position: relative;
+    left: -10px;
+    width: 810px;
+    height: 480px;
+    overflow: hidden;
+    margin: 0 auto;
+    ul {
+        width: 4050px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        li {
+            float: left;
+            img {
+                display: block;
+            }
+        }
+    }
+}

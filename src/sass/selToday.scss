@@ -1,0 +1,130 @@
+@import "base";
+
+.dailySale {
+    overflow: visible;
+    .conTit {
+        height: 38px;
+        line-height: 46px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 3px;
+        h2 {
+            color: #c53616;
+            float: left;
+            font-size: 18px;
+            margin-right: 10px;
+            font-family: "microsoft yahei";
+            overflow: hidden;
+            font-weight: bold;
+            i.isale {
+                background-position: -152px -44px;
+                background: url(../css/img/icon_index.png) no-repeat;
+            }
+            i.iTit {
+                display: block;
+                float: left;
+                width: 38px;
+                height: 38px;
+                margin-right: 5px;
+            }
+        }
+        span {
+            &.subTit {
+                font-size: 14px;
+                float: left;
+                padding-top: 3px;
+                color: #999999;
+                .letters {
+                    float: left;
+                    display: block;
+                    width: 82px;
+                    position: relative;
+                    height: 32px;
+                    line-height: 28px;
+                    overflow: hidden;
+                    margin-top: 4px;
+                    .words-warp {
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .moreInfo {
+            float: right;
+            margin-top: 3px;
+            font-family: simsun;
+            letter-spacing: 1px;
+        }
+    }
+    
+    .saleToday {
+        font-size: 14px;
+        ul {
+            width: 1200px;
+            height: 903px;
+            li {
+                width: 290px;
+                float: left;
+                margin: 0 10px 10px 0;
+                background: #FFFFFF;
+                box-shadow: 0 0 5px 0 #d8d7d7;
+                a {
+                    background: #FFFFFF;
+                    display: block;
+                    position: relative;
+                    width: 290px;
+                    height: 230px;
+                    overflow: hidden;
+                }
+                img {
+                    z-index: 10;
+                }
+                div.saleTit {
+                    overflow: hidden;
+                    height: 60px;
+                    line-height: 60px;
+                    padding: 0 10px;
+                    h3 {
+                        float: left;
+                        width: 180px;
+                        overflow: hidden;
+                        color: #444;
+                        padding-top: 6px;
+                        p {
+                            line-height: 24px;
+                            font-size: 14px;
+                            height: 24px;
+                            overflow: hidden;
+                            &.limit {
+                                font-size: 12px;
+                                color: #999999;
+                                span {
+                                    font-size: 12px;
+                                    color: #999999;
+                                    float: none;
+                                }
+                            }
+                            i {
+                                padding: 3px 10px;
+                                background: url(../css/img/icon_index.png) no-repeat;
+                                background-position: -520px 3px;
+                            }
+                        }
+                    }
+                    span {
+                        float: right;
+                        color: #E02200;
+                        b {
+                            font-weight: bold;
+                            font-size: 2em;
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
