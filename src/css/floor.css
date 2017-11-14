@@ -91,3 +91,37 @@
 .layer .rightCon a.aImg { display: block; height: 155px; border: 1px solid #ededed; }
 
 .layer .rightCon a.aImg img { width: 228px; height: 155px; }
+
+.mui-lift { position: absolute; left: 50%; top: 4000px; width: 35px; margin-left: -635px; z-index: 10; }
+
+.mui-lift .sn-nav-wrapper { display: block; }
+
+.mui-lift .sn-nav-wrapper a { display: block; width: 35px; line-height: 35px; text-align: center; color: #333333; }
+
+.mui-lift .sn-nav-wrapper a:hover div { display: none; color: #e27c6a; }
+
+.mui-lift .sn-nav-wrapper a.on div { display: none; color: #e27c6a; }
+
+.mui-lift .sn-nav-wrapper a:hover font, .mui-lift .sn-nav-wrapper a.on font { display: block; line-height: 15px; color: #E8A79C; }
+
+.mui-lift .sn-nav-wrapper a div { width: 35px; height: 32px; border-bottom: 1px solid #CCCCCC; padding: 2px 0; display: block; }
+
+.mui-lift .sn-nav-wrapper a div.snbg1 { background-position: -518px -58px; }
+
+.mui-lift .sn-nav-wrapper a div.snbg2 { background-position: -518px -102px; }
+
+.mui-lift .sn-nav-wrapper a div.snbg3 { background-position: -518px -145px; }
+
+.mui-lift .sn-nav-wrapper a div.snbg4 { background-position: -518px -191px; }
+
+.mui-lift .sn-nav-wrapper a div.snbg5 { background-position: -518px -235px; }
+
+.mui-lift .sn-nav-wrapper a div.snbg6 { background-position: -518px -276px; }
+
+.mui-lift .sn-nav-wrapper a div.snbg7 { background-position: -518px -319px; }
+
+.mui-lift .sn-nav-wrapper a div.snbg8 { background-position: -518px -359px; }
+
+.mui-lift .sn-nav-wrapper a div.snbg9 { background-position: -518px -404px; }
+
+.mui-lift .sn-nav-wrapper a font { display: none; border-bottom: 1px solid #e8a79c; padding: 3px 0; font-size: 12px; }

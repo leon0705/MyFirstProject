@@ -1,5 +1,4 @@
 @import 'main';
-
 .layer {
     margin-top: 4px;
     position: relative;
@@ -47,7 +46,6 @@
             position: relative;
         }
     }
-    
     .midFir {
         width: 520px;
         float: left;
@@ -75,7 +73,6 @@
             }
         }
     }
-    
     .midSec {
         width: 220px;
         float: left;
@@ -103,7 +100,6 @@
             }
         }
     }
-    
     .rightCon {
         float: left;
         a {
@@ -115,6 +111,79 @@
                     width: 228px;
                     height: 155px;
                 }
+            }
+        }
+    }
+}
+
+.mui-lift {
+    position: absolute;
+    left: 50%;
+    top: 4000px;
+    width: 35px;
+    margin-left: -635px;
+    z-index: 10;
+    .sn-nav-wrapper {
+        display: block;
+        a {
+            display: block;
+            width: 35px;
+            line-height: 35px;
+            text-align: center;
+            color: #333333;
+            &:hover div {
+                display: none;
+                color: #e27c6a;
+            }
+            &.on div {
+                display: none;
+                color: #e27c6a;
+            }
+            
+            &:hover font , &.on font {
+                display: block;
+                line-height: 15px;
+                color: #E8A79C;
+            }
+            div {
+                width: 35px;
+                height: 32px;
+                border-bottom: 1px solid #CCCCCC;
+                padding: 2px 0;
+                display: block;
+                &.snbg1 {
+                    background-position: -518px -58px;
+                }
+                &.snbg2 {
+                    background-position: -518px -102px;
+                }
+                &.snbg3 {
+                    background-position: -518px -145px;
+                }
+                &.snbg4 {
+                    background-position: -518px -191px;
+                }
+                &.snbg5 {
+                    background-position: -518px -235px;
+                }
+                &.snbg6 {
+                    background-position: -518px -276px;
+                }
+                &.snbg7 {
+                    background-position: -518px -319px;
+                }
+                &.snbg8 {
+                    background-position: -518px -359px;
+                }
+                &.snbg9 {
+                    background-position: -518px -404px;
+                }
+            }
+            font {
+                display: none;
+                border-bottom: 1px solid #e8a79c;
+                padding: 3px 0;
+                font-size: 12px;
             }
         }
     }

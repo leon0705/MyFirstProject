@@ -121,13 +121,19 @@ jQuery(function($) {
 		})
 	})
 
+	//载入楼层
+	$('#floorBox').load('./html/floor.html', function() {
+
+
+	})
+
 	//载入购物车
 	$('.gou-cart').load('./html/common_gou_cart.html', function() {
 
 		var t_or_f = false;
 		//页面载入时先隐藏
-		$(this).css('right','-280px');
-		
+		$(this).css('right', '-280px');
+
 		//根据判断来决定是显示或者隐藏
 		$('.gou-cart').on('click', '#shopCartLayerBtn', function() {
 			if(t_or_f === true) {
@@ -166,14 +172,20 @@ jQuery(function($) {
 
 	//吸顶菜单
 	$('.flyheader').load('./html/flyheader.html', function() {
-		
+
 		$(window).on('scroll', function() {
 			let scrollY = window.scrollY;
 			if(scrollY >= 1500) {
-				$('.flyheader').stop().slideDown(400).addClass('fixed');
+				$('.flyheader').show().stop().animate({
+					top: 0
+				}, 200).addClass('fixed');
 			}
 			if(scrollY < 1500) {
-				$('.flyheader').slideUp(400).removeClass('fixed');
+				$('.flyheader').stop().animate({
+					top: -55
+				}, 200, function() {
+					$(this).hide();
+				})
 			}
 		})
 	})
