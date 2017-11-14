@@ -200,7 +200,7 @@
 					}
 				}
 
-				console.log(this.index)
+//				console.log(this.index)
 				this.hCss();
 				target.left = -this.index * this.opt.width;
 

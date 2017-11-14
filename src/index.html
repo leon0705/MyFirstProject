@@ -118,39 +118,39 @@
 		<!--楼梯跳转-->
 		<div class="mui-lift" style="position: absolute;">
 			<div class="sn-nav-wrapper">
-				<a href="">
+				<a>
 					<div class="snbg1"></div>
 					<font>宝宝奶粉</font>
 				</a>
-				<a href="">
+				<a>
 					<div class="snbg2"></div>
 					<font>宝宝辅食</font>
 				</a>
-				<a href="">
+				<a>
 					<div class="snbg3"></div>
 					<font>营养健康</font>
 				</a>
-				<a href="">
+				<a>
 					<div class="snbg4"></div>
 					<font>宝宝用品</font>
 				</a>
-				<a href="">
+				<a>
 					<div class="snbg5"></div>
 					<font>宝宝服饰</font>
 				</a>
-				<a href="">
+				<a>
 					<div class="snbg6"></div>
 					<font>宝宝玩具</font>
 				</a>
-				<a href="">
+				<a>
 					<div class="snbg7"></div>
 					<font>孕产用品</font>
 				</a>
-				<a href="">
+				<a>
 					<div class="snbg8"></div>
 					<font>化妆品</font>
 				</a>
-				<a href="">
+				<a>
 					<div class="snbg9"></div>
 					<font>居家生活</font>
 				</a>
@@ -172,69 +172,9 @@
 		</div>
 	</body>
 	<script src="./js/jquery-3.2.1.js"></script>
-	<script src="js/common.js"></script>
-	<script src="js/index_header_cart_footer.js"></script>
-	<script src="js/Carousel.js"></script>
-	<script src="js/LastMinuteBuy.js"></script>
-	<script>
-		$(function() {
-			console.log()
-//			let arr = [];
-//			$('#floorBox .').each(function(idx, item) {
-//				let st = $(item).offset().top;
-//				console.log(st)
-//				arr.push({
-//					idx: idx,
-//					oft: st
-//				});
-//			})
-//			arr.push({
-//				idx: 11,
-//				oft: 0
-//			});
-//
-			$(window).scroll(function() {
-				
-				var sc = $(window).scrollTop();
-//								console.log(sc)
-				if(sc > 3700) {console.log(666)
-					$('.mui-lift').stop().fadeIn().css({'position':'fixed',"top":"200px"});
-				} else if(sc < 3700) {
-					$('.mui-lift').stop().fadeOut();
-				}
-
-				//老谢的方法
-//				$('#main .louceng').each(function(idx, item) {
-//					console.log(666)
-//					if(sc >= $(item).offset().top - $(item).height() / 2) {
-//						$('#louti ul li').slice(0).removeClass('hover').eq(idx).addClass('hover');
-//					}
-//				})
-
-			})
-//
-//			$('#louti').on('click', 'li', function() {
-//
-//				$(this).addClass('hover').siblings('li').removeClass('hover');
-//				//点击的时候获取当前li的索引值，此索引值与楼层索引值相对应
-//				let idx = $(this).index();
-//				console.log(idx)
-//				//				console.log(idx)
-//				//获得数组中相应索引楼层的offset().top值
-//				let atop = arr[idx].oft;
-//
-//				if($(this).css('last')) {
-//					atop = 0;
-//					$('body').animate({
-//						scrollTop: atop
-//					});
-//				}
-//				$('body').stop().animate({
-//					scrollTop: atop
-//				});
-//
-//			})
-		});
-	</script>
+	<script src="./js/common.js"></script>
+	<script src="./js/index_header_cart_footer.js"></script>
+	<script src="./js/Carousel.js"></script>
+	<script src="./js/LastMinuteBuy.js"></script>
 
 </html>

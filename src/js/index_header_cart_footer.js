@@ -2,18 +2,18 @@ jQuery(function($) {
 
 	//载入footer 和 header
 	$('header').load('./html/common_header.html', function() {
-		console.log(777)
+		//		console.log(777)
 
 		//顶部hover效果
 		$('.rg').on('mouseenter', '.mygou', function() {
-			console.log(666)
+			//			console.log(666);
 			$(this).addClass('on').find('.noneCon').stop().slideDown(500);
 		}).on('mouseleave', '.mygou', function() {
 			let self = $(this);
 			$(this).find('.noneCon').stop().slideUp(500, function() {
 				self.removeClass('on')
-			})
-		})
+			});
+		});
 
 		//异步请求，从后端获取数据
 		$.ajax({
@@ -60,9 +60,9 @@ jQuery(function($) {
 								let $a = $('<a/>').html(`${iiitem}`);
 								$p.append($a)
 							}
-						})
-					})
-				})
+						});
+					});
+				});
 
 				$menubox.append($ul);
 				$menubox.append($menuCon);
@@ -85,13 +85,13 @@ jQuery(function($) {
 				left: 170,
 				opacity: 0
 			}, 100).css('display', 'none');
-		})
-	})
+		});
+	});
 
 	//载入整点抢
 	$('#div_MLastMinute').load('./html/LastMinuteBuy.html', function() {
 
-	})
+	});
 
 	//载入天天特卖
 	$('#div_TeMai').load('./html/saleToday.html', function() {
@@ -119,13 +119,65 @@ jQuery(function($) {
 					height: 230
 				}, 500)
 		})
-	})
+	});
 
 	//载入楼层
 	$('#floorBox').load('./html/floor.html', function() {
 
+		var layer = document.querySelectorAll('#floorBox .article');
+		//		console.log(layer)
+		let arr = [];
 
-	})
+		layer.forEach(function(item, idx) {
+//			console.log(item)
+			let st = $(item).position().top;
+//			console.log(st)
+			arr.push({
+				idx: idx,
+				oft: st
+			});
+
+		})
+		//	console.log(arr)
+		$(window).scroll(function() {
+
+			var sc = $(window).scrollTop();
+			console.log(sc)
+			if(sc > 2500) {
+
+				$('.mui-lift').stop().fadeIn().css({
+					'position': 'fixed',
+					"top": "200px"
+				});
+			} else if(sc < 2500) {
+				$('.mui-lift').stop().fadeOut('fast');
+			}
+			layer.forEach(function(item,idx) {
+				console.log(item)
+				if(sc >= $(item).offset().top - $(item).height() / 2) {
+
+					$('.sn-nav-wrapper').find('a').slice(0).removeClass('on').eq(idx).addClass('on');
+				}
+			})
+		})
+
+		$('.sn-nav-wrapper').on('click', 'a', function() {
+
+			$('.sn-nav-wrapper').find('a').slice(0).removeClass('on');
+			$(this).addClass('on');
+			//点击的时候获取当前li的索引值，此索引值与楼层索引值相对应
+			let idx = $(this).index();
+			console.log(idx)
+			//				console.log(idx)
+			//获得数组中相应索引楼层的offset().top值
+			let atop = arr[idx].oft;
+
+			$('body').stop().animate({
+				scrollTop: atop - 44
+			});
+
+		})
+	});
 
 	//载入购物车
 	$('.gou-cart').load('./html/common_gou_cart.html', function() {
@@ -147,7 +199,7 @@ jQuery(function($) {
 				});
 				t_or_f = true;
 			}
-		})
+		});
 
 		$('.bot').on('mouseenter', 'li', function() {
 			if(!$(this).hasClass('')) {
@@ -166,9 +218,9 @@ jQuery(function($) {
 				width: 0,
 				left: 0
 			});
-		})
+		});
 
-	})
+	});
 
 	//吸顶菜单
 	$('.flyheader').load('./html/flyheader.html', function() {
@@ -185,12 +237,12 @@ jQuery(function($) {
 					top: -55
 				}, 200, function() {
 					$(this).hide();
-				})
+				});
 			}
-		})
-	})
+		});
+	});
 
 	//载入底部
-	$('#footer').load('./html/common_footer.html', function() {})
+	$('#footer').load('./html/common_footer.html', function() {});
 
 })
