@@ -143,6 +143,8 @@ jQuery(function($) {
 
 			var sc = $(window).scrollTop();
 			console.log(sc)
+			
+			//跳转按钮显示
 			if(sc > 2500) {
 
 				$('.mui-lift').stop().fadeIn().css({
@@ -152,6 +154,8 @@ jQuery(function($) {
 			} else if(sc < 2500) {
 				$('.mui-lift').stop().fadeOut('fast');
 			}
+			
+			//循环遍历判断当前位置是否到指定位置
 			layer.forEach(function(item, idx) {
 				//				console.log(item)
 				if(sc >= $(item).offset().top - $(item).height() / 2) {
