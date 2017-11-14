@@ -240,6 +240,23 @@
                     width: 100px;
                     padding-left: 8px;
                 }
+                &.check {
+                    height: auto;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+                &.btn {
+                    background-color: #e83917;
+                    width: 290px;
+                    margin-top: 5px;
+                    color: #fff;
+                    font-size: 22px;
+                    height: 40px;
+                    line-height: 40px;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
             }
             p {
                 &.focusTex {

@@ -90,6 +90,10 @@
 
 .regMain .regRight li input.code { width: 100px; padding-left: 8px; }
 
+.regMain .regRight li input.check { height: auto; vertical-align: middle; margin-right: 5px; }
+
+.regMain .regRight li input.btn { background-color: #e83917; width: 290px; margin-top: 5px; color: #fff; font-size: 22px; height: 40px; line-height: 40px; border: none; border-radius: 3px; cursor: pointer; }
+
 .regMain .regRight li p.focusTex { line-height: 24px; color: #ff6b52; height: 24px; }
 
 .regMain a { color: #999999; text-decoration: none; }
