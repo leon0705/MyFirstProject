@@ -129,9 +129,9 @@ jQuery(function($) {
 		let arr = [];
 
 		layer.forEach(function(item, idx) {
-//			console.log(item)
+			//			console.log(item)
 			let st = $(item).position().top;
-//			console.log(st)
+			//			console.log(st)
 			arr.push({
 				idx: idx,
 				oft: st
@@ -152,8 +152,8 @@ jQuery(function($) {
 			} else if(sc < 2500) {
 				$('.mui-lift').stop().fadeOut('fast');
 			}
-			layer.forEach(function(item,idx) {
-				console.log(item)
+			layer.forEach(function(item, idx) {
+				//				console.log(item)
 				if(sc >= $(item).offset().top - $(item).height() / 2) {
 
 					$('.sn-nav-wrapper').find('a').slice(0).removeClass('on').eq(idx).addClass('on');
@@ -167,13 +167,13 @@ jQuery(function($) {
 			$(this).addClass('on');
 			//点击的时候获取当前li的索引值，此索引值与楼层索引值相对应
 			let idx = $(this).index();
-			console.log(idx)
+			//			console.log(idx)
 			//				console.log(idx)
 			//获得数组中相应索引楼层的offset().top值
 			let atop = arr[idx].oft;
 
 			$('body').stop().animate({
-				scrollTop: atop - 44
+				scrollTop: atop
 			});
 
 		})
@@ -218,7 +218,26 @@ jQuery(function($) {
 				width: 0,
 				left: 0
 			});
-		});
+		})
+
+		$('.bot').on('click', '#backTop', function() {
+
+			timer = setInterval(function() {
+				var st = window.scrollY;
+				//设置速度，当滚动条越靠近底部，滚动速度越快，反之越慢
+				var speed = st / 7;
+				var move = st - speed;
+				//设置浏览器滚动距离
+				var tp = scrollTo(0, move);
+
+				if(move < 1) {
+					//当最后距离小于1时，直接设置tp的值并且清楚定时器
+					tp === 0;
+					clearInterval(timer);
+				}
+			}, 50)
+
+		})
 
 	});
 

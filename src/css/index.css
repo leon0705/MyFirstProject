@@ -399,3 +399,7 @@ body { margin: 0; padding: 0; }
 .nopublic .nothing .noicon { background: url(../css/img/cartshop.png) no-repeat center; width: 220px; height: 220px; }
 
 .nopublic .nothing a { font-size: 16px; line-height: 40px; }
+
+.botCol { width: 100%; background: #FAFAFA; overflow: hidden; border-bottom: 1px solid #DDDDDD; margin-bottom: 30px; }
+
+.footBg { background: url(../css/img/footBg.jpg) no-repeat center center; width: 100%; height: 380px; margin: 20px 0 0px 0; position: relative; margin-top: -10px; }

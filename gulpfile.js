@@ -99,7 +99,7 @@ gulp.task('browser-sync', function() {
 
 		port: 5277,
 
-		files: ['./src/**/*.html', './src/css/*.css', './src/api/*.php']
+		files: ['./src/**/*.html', './src/css/*.css', './src/api/*.php' ,'./src/js/*.js']
 
 	});
 
