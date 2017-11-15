@@ -1,0 +1,7 @@
+.carousel { position: relative; left: -10px; width: 810px; height: 480px; overflow: hidden; margin: 0 auto; }
+
+.carousel ul { width: 4860px; position: absolute; top: 0; left: 0; overflow: hidden; }
+
+.carousel ul li { float: left; }
+
+.carousel ul li img { display: block; }

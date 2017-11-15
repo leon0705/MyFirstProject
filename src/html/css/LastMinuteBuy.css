@@ -1,0 +1,67 @@
+.article { overflow: visible; width: 1190px; margin: auto; }
+
+#div_MLastMinute { overflow: visible; width: 1190px; margin: auto; }
+
+#div_MLastMinute .conTit { height: 38px; line-height: 46px; overflow: hidden; position: relative; margin-bottom: 3px; }
+
+#div_MLastMinute .conTit h2 { float: left; font-size: 18px; margin-right: 10px; overflow: hidden; font-weight: bold; }
+
+#div_MLastMinute .conTit h2 .iTit { display: block; float: left; width: 38px; height: 38px; margin-right: 5px; background: url(../css/img/icon_index.png) no-repeat; background-position: -58px -44px; }
+
+#div_MLastMinute .conTit span { font-size: 14px; }
+
+#div_MLastMinute .conTit span.subTit { float: left; padding-top: 3px; color: #999999; }
+
+#div_MLastMinute .conTit .timeCount { position: absolute; left: 225px; top: 0; font-size: 14px; color: #999; }
+
+#div_MLastMinute .conTit .timeCount .nainfo { float: left; padding-top: 17px; margin-left: 30px; line-height: 20px; }
+
+#div_MLastMinute .conTit .moreInfo { float: right; margin-top: 3px; font-family: simsun; letter-spacing: 1px; }
+
+#div_MLastMinute .timeTit { position: relative; }
+
+#div_MLastMinute .timeTit ul { height: 50px; overflow: hidden; }
+
+#div_MLastMinute .timeTit ul li { float: left; width: 20%; height: 37px; padding-top: 5px; position: relative; background: #444851; }
+
+#div_MLastMinute .timeTit ul li a { display: block; color: #e2e2e2; text-align: center; line-height: 17px; }
+
+#div_MLastMinute .timeTit ul li a .time { font-size: 16px; }
+
+#div_MLastMinute .timeCon .ul { font-family: "microsoft yahei"; position: relative; overflow: hidden; width: 1200px; padding-top: 10px; height: 362px; }
+
+#div_MLastMinute .timeCon .ul .bt { position: absolute; right: 10px; top: 4px; z-index: 20; }
+
+#div_MLastMinute .timeCon .ul .bt .next { width: 12px; height: 14px; float: right; margin-top: 2px; background: url(../css/img/icon_index.png) no-repeat; background-position: -348px 0; }
+
+#div_MLastMinute .timeCon .ul .bt .prev { width: 12px; height: 14px; float: left; margin-top: 2px; background: url(../css/img/icon_index.png) no-repeat; background-position: -336px 0px; }
+
+#div_MLastMinute .timeCon .ul ul.absolute { position: absolute; height: 347px; margin-top: 15px; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li { float: left; background: #FFFFFF; margin-right: 10px; width: 290px; height: 345px; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .img { display: block; width: 240px; margin: 15px auto 5px; position: relative; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .img .limtc { position: absolute; right: -28px; top: 10px; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .img img { width: 240px; height: 240px; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .name { padding: 0 20px 0 20px; font-size: 14px; height: 2.8em; line-height: 1.4em; overflow: hidden; color: #666666; margin-bottom: 4px; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .price { font-size: 14px; color: #e02200; float: left; padding: 0 0 0 20px; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .price p { padding-top: 3px; line-height: 27px; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .price p b { font-size: 18px; font-weight: bolder; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .price p s { font-size: 12px; color: #a1a1a1; line-height: 12px; text-decoration: none; padding-left: 3px; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .price p s del { text-decoration: line-through; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .buyBtn { float: right; font-family: "microsoft yahei"; }
+
+#div_MLastMinute .timeCon .ul ul.absolute li .buyBtn a { display: block; width: 90px; height: 30px; font-size: 15px; text-align: center; color: #FFFFFF; background: #f95d5e; border-radius: 3px; line-height: 30px; margin-right: 10px; }
+
+#div_MLastMinute .timeCon .ul .boxleft { position: absolute; left: 2px; opacity: 0.6; top: 120px; width: 27px; background-position: -201px -125px; height: 84px; z-index: 10; background: url(../css/img/icon_index.png) no-repeat; }
+
+#div_MLastMinute .timeCon .ul .boxright { position: absolute; right: 12px; opacity: 0.6; top: 120px; width: 27px; height: 84px; z-index: 10; background-position: -258px -125px; background: url(../css/img/icon_index.png) no-repeat; }

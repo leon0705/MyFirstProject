@@ -1,0 +1,147 @@
+@import '_base';
+@import 'main';
+.breadcrumb {
+    color: #999999;
+    line-height: 50px;
+    height: 50px;
+    font-family: 宋体, simsun;
+    a {
+        padding: 0 5px;
+    }
+}
+
+.shareW {
+    width: 1190px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.brandSection {
+    width: 100%;
+    .brandList {
+        width: 1190px;
+        margin: 0 auto;
+        .brandLeft {
+            float: left;
+            width: 220px;
+        }
+        .brandRight {
+            float: left;
+            width: 960px;
+        }
+        .brandInfo {
+            width: 218px;
+            border: 1px solid #dbdbdb;
+            border-top: 1px solid #000000;
+            padding-bottom: 13px;
+            margin-bottom: 16px;
+            h3 {
+                height: 31px;
+                line-height: 31px;
+                border-bottom: 1px solid #DBDBDB;
+                background: #f7f7f7;
+                text-indent: 16px;
+                font-size: 14px;
+                color: #151515;
+                font-weight: normal;
+                font-family: "微软雅黑";
+                width: 218px;
+                overflow: hidden;
+                &.hLink {
+                    border-top: 1px solid #dbdbdb;
+                    span {
+                        float: right;
+                        height: 16px;
+                        width: 16px;
+                        background: url(../img/pm.jpg) no-repeat 0 -16px;
+                        margin-right: 13px;
+                        margin-top: 8px;
+                        cursor: pointer;
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    color: #151515;
+                    font-weight: normal;
+                    font-family: "微软雅黑";
+                }
+            }
+            div {
+                padding: 0 8px 0 8px;
+            }
+            .navBox {
+                padding: 0 8px 0 8px;
+                h4 {
+                    height: 33px;
+                    line-height: 33px;
+                    a {
+                        font-size: 16px;
+                        color: #c91e00;
+                    }
+                }
+                p {
+                    height: 100%;
+                    padding: 0;
+                    border-bottom: 1px dashed #dbdbdb;
+                    padding-bottom: 10px;
+                    a {
+                        display: inline-block;
+                        height: 24px;
+                        line-height: 24px;
+                        font-size: 12px;
+                        color: #151515;
+                        padding: 0 6px;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .hotInfo {
+                height: 100px;
+                padding: 0;
+                position: relative;
+                border-bottom: 1px dashed #CCCCCC;
+                padding-bottom: 5px;
+                div {
+                    float: left;
+                    padding: 0;
+                }
+                img {
+                    width: 64px;
+                    height: 64px;
+                }
+                .hotL {
+                    width: 64px;
+                    position: absolute;
+                    top: 20px;
+                    padding: 0;
+                }
+                .hotR {
+                    width: 140px;
+                    position: absolute;
+                    top: 20px;
+                    right: 0;
+                    p {
+                        height: 32px;
+                        line-height: 16px;
+                        overflow: hidden;
+                        padding: 0;
+                        margin-bottom: 5px;
+                        a {
+                            font-size: 12px;
+                            color: #494949;
+                        }
+                    }
+                    strong {
+                        font-size: 13px;
+                        color: #CB1E00;
+                    }
+                    span {
+                        display: inline-block;
+                        height: 22px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.gou-category-menu { position: relative; height: 480px; padding-bottom: 20px; z-index: 1; }
+
+.gou-category-menu .pic-opera { position: relative; width: 1190px; height: 480px; margin: auto; }
+
+.gou-category-menu .pic-opera .market-ad-r { position: absolute; right: 0; top: 0; z-index: 4; }
+
+.gou-category-menu .pic-opera .market-ad-r a { display: block; margin-top: 1px; width: 200px; height: 159px; background: #FFFFFF; opacity: 0.9; }
+
+.gou-category-menu .pic-slide { position: absolute; left: 0; top: 0; height: 480px; width: 100%; z-index: 1; }
