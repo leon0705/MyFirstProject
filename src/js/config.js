@@ -11,7 +11,7 @@ require.config({
 		CarS:'./Carousel'
 	},
 	shim: {
-		
+		floor:['load','jquery'],
 		load: ['jquery'],
 		CarS:['com']
 	}

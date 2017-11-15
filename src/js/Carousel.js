@@ -200,7 +200,7 @@
 					}
 				}
 
-//				console.log(this.index)
+				//				console.log(this.index)
 				this.hCss();
 				target.left = -this.index * this.opt.width;
 
@@ -289,6 +289,6 @@
 	})
 
 	var lbt = new Carousel({
-		imgs: ["./css/img/Carl_1.jpg", "./css/img/Carl_2.jpg", "./css/img/Carl_3.jpg", "./css/img/Carl_4.jpg", "./css/img/Carl_5.jpg"]
+		imgs: ["./css/img/Carl_1.jpg", "./css/img/Carl_2.jpg", "./css/img/Carl_3.jpg", "./css/img/Carl_4.jpg", "./css/img/Carl_5.jpg", "./css/img/Carl_1.jpg"]
 	});
 })();

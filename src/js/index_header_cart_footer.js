@@ -104,8 +104,8 @@ jQuery(function($) {
 				.animate({
 					left: -12.5,
 					top: -10,
-					width: 315,
-					height: 249
+					width: 325,
+					height: 259
 				}, 500)
 		}).on('mouseleave', 'li', function() {
 			$(this).css('overflow', 'visible')
@@ -122,9 +122,9 @@ jQuery(function($) {
 	});
 
 	//载入楼层
-	$('#floorBox').load('./html/floor.html', function() {
-
-	});
+//	$('#floorBox').load('./html/floor.html', function() {
+//
+//	});
 
 	//载入购物车
 	$('.gou-cart').load('./html/common_gou_cart.html', function() {
