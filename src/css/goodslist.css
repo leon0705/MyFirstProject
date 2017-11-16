@@ -166,7 +166,7 @@ section.content.zoom { width: 1190px; margin: 0 auto; }
 
 .brandSection .brandList .brandLeft { float: left; width: 220px; }
 
-.brandSection .brandList .brandRight { float: left; width: 960px; }
+.brandSection .brandList .brandRight { width: 960px; }
 
 .brandSection .brandList .brandInfo { width: 218px; border: 1px solid #dbdbdb; border-top: 1px solid #000000; padding-bottom: 13px; margin-bottom: 16px; }
 
@@ -207,3 +207,55 @@ section.content.zoom { width: 1190px; margin: 0 auto; }
 .brandSection .brandList .brandInfo .hotInfo .hotR strong { font-size: 13px; color: #CB1E00; }
 
 .brandSection .brandList .brandInfo .hotInfo .hotR span { display: inline-block; height: 22px; line-height: 22px; }
+
+.brandList .brandRight { float: right; width: 960px; }
+
+.brandList .brandRight .sort { height: 40px; border: 1px solid #dfdfdf; background: #F7F7F7; margin-bottom: 13px; width: 958px; }
+
+.brandList .brandRight .sort p { float: left; line-height: 40px; text-indent: 10px; color: #444444; font-size: 12px; }
+
+.brandList .brandRight .sort p.totalp { float: right; padding-right: 10px; line-height: 40px; font-size: 12px; color: #444444; }
+
+.brandList .brandRight .sort p.search .txt { width: 40px; height: 20px; border: 1px solid #ccc; text-align: center; }
+
+.brandList .brandRight .sort p.totalp span { color: red; }
+
+.brandList .brandRight .sort p.sorting a { display: inline-block; line-height: 26px; height: 26px; font-size: 12px; color: #434343; background: #fff; padding: 0 14px; border: 1px solid #d2d2d2; margin-right: 6px; text-align: center; text-indent: 0; }
+
+.brandList .brandRight .sort p.sorting a.hover { border: none; height: 28px; background: #cc1d00; padding: 0 15px; color: #fff; }
+
+.brandList .brandRight .result { padding-top: 0; width: 960px; }
+
+.brandList .brandRight .result li { float: left; width: 238px; height: 302px; margin-bottom: 25px; border: 1px solid #fff; border-bottom: 2px solid #fff; padding-top: 10px; position: relative; }
+
+.brandList .brandRight .result li .iConpos { position: relative; position: absolute; left: 0; top: 0; width: 100%; }
+
+.brandList .brandRight .result li .iConpos .i-pos { position: absolute; right: 0; top: -7px; }
+
+.brandList .brandRight .result li .pica { display: block; width: 180px; height: 180px; margin: 0 auto; margin-bottom: 5px; }
+
+.brandList .brandRight .result li .pica img { width: 180px; height: 180px; }
+
+.brandList .brandRight .result li .price-info { width: 185px; margin: 0 auto; }
+
+.brandList .brandRight .result li .price-info del { text-decoration: line-through; }
+
+.brandList .brandRight .result li strong { font-size: 16px; line-height: 26px; color: #c91f00; font-family: verdana, geneva, sans-serifn; }
+
+.brandList .brandRight .result li .market-price { border-left: 1px solid #ccc; font-size: 12px; display: inline-block; height: 12px; line-height: 12px; margin-left: 10px; color: #999; }
+
+.brandList .brandRight .result li p { line-height: 16px; width: 185px; height: 32px; overflow: hidden; margin: 0 auto; }
+
+.brandList .brandRight .result li p a { font-size: 12px; color: #444444; line-height: 16px; font-family: "microsoft yahei"; line-height: 16px; height: 32px; }
+
+.brandList .brandRight .result li .activeTag { position: relative; height: 20px; width: 185px; margin: 5px auto 0; }
+
+.brandList .brandRight .result li .ass { width: 238px; text-align: center; }
+
+.brandList .brandRight .result li .ass span { font-size: 12px; display: inline-block; border: 1px solid #b5dbf1; height: 24px; line-height: 24px; text-align: center; color: #4693c1; text-decoration: none; padding: 0px 10px; margin-top: 5px; font-family: "宋体"; width: 70px; }
+
+.brandList .brandRight .result li .btn { position: absolute; bottom: 0px; background: #fff; display: none; width: 100%; }
+
+.brandList .brandRight .result li .btn input { background: url(../img/assBtn.png) no-repeat; width: 119px; height: 30px; color: #fff; padding-left: 20px; font-family: "宋体"; margin-left: 26px; margin-right: 20px; }
+
+.brandList .brandRight .result li .btn a { color: #999; padding-left: 15px; vertical-align: -2px; }

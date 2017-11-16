@@ -9,16 +9,15 @@
 		<link rel="stylesheet" href="../css/goodslist.css" />
 		<link rel="stylesheet" href="../css/LastMinuteBuy.css" />
 
-
 	</head>
 
 	<body>
- 
+
 		<!--顶部样式-->
 		<header>
- 
+
 		</header>
-		
+
 		<!--主体内容-->
 		<div class="breadcrumb shareW">
 			<a href="#">首页</a>
@@ -27,30 +26,59 @@
 			>
 			<a href="#">奶粉</a>
 		</div>
-		
+
 		<!--面包屑-->
 		<section class="brandSection">
 			<div class="brandList">
 				<div class="brandContent">
 					<div class="brandLeft">
 						<div class="brandInfo" id="brannInfoTop" style="padding-bottom:0 ;">
-							
+
 						</div>
 					</div>
-					<div class="brandInfo" id="buyDaren">
+					<!--<div class="brandInfo" id="buyDaren">
 						<h3>购物达人同时还购买了这些</h3>
 						<div class="infoBox hotInfoBox">
-							
+
 						</div>
-					</div>
+					</div>-->
 					<div class="brandRight">
+						<!--热卖推荐-->
+						<div class="hotRec"></div>
+						<!--国别品牌-->
+						<div class="goodsSel"></div>
+						<div class="sort">
+							<p class="sorting">
+								<a  class="hover">综合</a>
+								<a>销量</a>
+								<a>价格</a>
+								<a>评价</a>
+								<a>上架时间</a>
+							</p>
+							<p class="search">
+								<span>价格：</span>
+								<input id="ljg" type="text"  class="txt" value="  "> &nbsp;-&nbsp;
+								<input id="hjg" type="text"  class="txt" value="  "> &nbsp;&nbsp;
+								<input type="button" value="搜索" class="srch"> &nbsp;&nbsp;&nbsp;&nbsp;
+
+							</p>
+							<p class="totalp">
+								共计<span>389</span>件商品&nbsp;&nbsp;&nbsp;
+							</p>
+						</div>
 						
+						<div class="result" id="divGoodsList">
+							<ul class="clear" style="height: 100%;"></ul>
+						</div>
+						<div class="page">
+							<div></div>
+						</div>
 					</div>
 					<div class="clear"></div>
 				</div>
 			</div>
 		</section>
-		
+
 		<!--购物车-->
 		<div class="gou-cart" style="right: 0;">
 

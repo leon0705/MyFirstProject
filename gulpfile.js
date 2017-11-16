@@ -92,7 +92,7 @@ gulp.task('mergeJS', function() {
 //});
 
 //有自己的服务器时使用
-gulp.task('browser-sync', function() {
+gulp.task('browserSync', function() {
 	browserSync({
 		
 		proxy: "http://localhost:5277",
@@ -104,6 +104,7 @@ gulp.task('browser-sync', function() {
 	});
 
 	//开启服务器的同时，监听sass的修改
+//	gulp.watch('./src/**/*.scss', ['compileSass']);
 	gulp.watch('./src/**/*.scss', ['compileSass']);
 
 });

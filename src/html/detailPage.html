@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/LastMinuteBuy.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/detailPage.css" />
+		<link rel="stylesheet" href="../lib/jquery.gdsZoom.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<header></header>
+
+		<!--面包屑-->
+		<div class="breadcrumb shareW" data-cansalecount>
+
+		</div>
+
+		<!--产品图片及参数-->
+		<div class="shareW productInfo" data-pro>
+			<!--图片-->
+			<div class="preview">
+				<div class="jqzoom" id="spec-n1">
+					<img src="../img/d_goodsImg_nt_1.jpg" height="350" width="350" class="CoverGoodsVideoImg" />
+					<div class="jqZoomPup" style="display: none;width: 175px; height: 175px; visibility: visible; top: 0px; left: 0px;">&nbsp;</div>
+				</div>
+				<div class="zoomdiv" style="top: 0px; left: 370px; width: 400px; height: 400px; display: none;">
+						<img class="bigimg" src="../img/d_goodsImg_nt_2.jpg">
+				</div>
+				<div id="spec-n5">
+					<div class="control" id="spec-left"></div>
+					<div id="spec-list">
+						<ul class="list-h" data-count="" style="width: 305px; overflow: hidden;">
+							<li><img src="../img/d_goodsImg_nt_1.jpg" alt="" width="50" height="50" /></li>
+							<li><img src="../img/d_goodsImg_nt_2.jpg" alt="" width="50" height="50" /></li>
+							<li><img src="../img/d_goodsImg_nt_3.jpg" alt="" width="50" height="50" /></li>
+							<li><img src="../img/d_goodsImg_nt_4.jpg" alt="" width="50" height="50" /></li>
+							<li><img src="../img/d_goodsImg_nt_5.jpg" alt="" width="50" height="50" /></li>
+						</ul>
+					</div>
+					<div class="control" id="spec-right"></div>
+				</div>
+				<div class="addBox">
+					<ul>
+						<li class="sc">
+							<a>收藏商品</a>
+						</li>
+					</ul>
+				</div>
+				<div class="overLeftKf">
+					<a>
+						<i class="iconNe"></i> 在线客服
+					</a>
+					<i class="iconph"></i> 服务热线：400-666-6600
+				</div>
+			</div>
+			<div class="goodsName">
+				<h1>
+					<font color="red">全球购</font>
+					<font color="red"></font>
+					荷兰牛栏奶粉Nutrilon 4段（1-2岁）800g（海外版）
+				</h1>
+				<span>
+					荷兰本土采购，口味清淡，不上火
+				</span>
+			</div>
+			<div class="goodsPay">
+				<ul>
+					<li class="sumPriceNow bgGray">
+						<div class="dt" id="priceLabel">销 售 价：</div>
+						<div class="dd countDd">
+							<font size="3px" color="#cc1d00">￥</font>
+							<span id="sGoodsPrice">242</span>
+							<div class="iblock">
+								<em class="e1">含税价</em> （包含关税、增值税和消费税）
+							</div>
+							<div class="temai"></div>
+							<p id="p_babyfvl"></p>
+						</div>
+					</li>
+					<li class="sumPriceOld bgGray">
+						<div class="dt">价&nbsp;&nbsp;格：</class>
+							<div class="dd">
+								<span>
+								<del>
+									￥312
+									<del></del>
+								</del>
+							</span>
+							</div>
+					</li>
+					<li class="sumSale bgGray">
+						<div class="dt">促销信息：</div>
+						<div class="dd">
+							<p style="font-size: 12px;font-family: arial,helvetica,sans-serif;">
+								<a href="./login.html" class="login">登录</a>
+								查看更多优惠
+							</p>
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li class="ass">
+						<span>累计销量：<em> 32.5万 </em><i>|</i></span>
+						<span>累计评价：<em >23482</em>  <i>|</i> </span>
+						<span>赠送麦豆：<em id="goodsScore">12</em></span>
+					</li>
+					<li class="sumChoose sCse">
+						<div class="dt"><span style="letter-spacing:23px;font-family: SimSun;">段</span>位：</div>
+						<div class="dd">
+							<a>1段</a>
+							<a>2段</a>
+							<a>3段</a>
+							<a>4段</a>
+							<a>4段香草味</a>
+							<a>5段</a>
+							<a>6段</a>
+						</div>
+
+					</li>
+					<form id="buyForm" name="buyForm">
+
+						<li class="sumChoose tc">
+							<div class="dt">组合套餐：</div>
+							<div class="dd" id="main">
+
+								<div class="oDiv" style="display:inline-block">
+									<a class="hover">1罐</a>
+								</div>
+
+								<div class="oDiv" style="display:inline-block">
+									<a>2罐</a>
+								</div>
+								<div class="oDiv" style="display:inline-block">
+									<a>4罐</a>
+								</div>
+								<div class="oDiv" style="display:inline-block">
+									<a>8罐</a>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+
+						<li class="sumNum">
+							<div class="dt">购买数量：</div>
+							<div class="dd" id="dddiv">
+								<input type="hidden" id="isBuyNow" value=" 0">
+								<a class="inpSubtract" style="border-right: none; color: rgb(102, 102, 102); cursor: pointer;">-</a>
+								<input name="Amount" id="Amount" type="text" value="1" class="textNum" maxlength="2" data-maxbuycount="" style="ime-mode:disabled;" autocomplete="off">
+								<a class="inpAdd" style="border-left: none; color: rgb(102, 102, 102); cursor: pointer;">+</a>
+
+								<p id="buyNowMsg" style="color:Red;padding-left: 15px;vertical-align: middle;display: inline-block;"></p>
+							</div>
+						</li>
+
+						<div style="clear:both;"></div>
+					</form>
+				</ul>
+				<!--</div>-->
+				<div class="clear"></div>
+				<div class="buyBtn">
+					<span id="divBtn" class="buyBtn" style="padding-left: 0px;">
+                        <a id="buyA" style="width:160px;height:42px;line-height:42px" class="btnMain">加入购物车</a>
+                    </span>
+				</div>
+				<p class="reminder">
+					<span class="sL">温馨提示：
+        			</span>
+					<span class="sR" id="reminderR"><i>此商品物权归麦乐购(香港)有限公司所有</i></span>
+				</p>
+				<div class="bzBox">
+					<h3 style=" background: url(../img/pro_20150518.png) no-repeat;">麦乐购 购安全</h3>
+					<p class="p1" title="100%海外本土采购"><i style="background:url(../img/OctW5DcAK-A03RCwRgdGg4.jpg) no-repeat;"></i>100%海外本土采购</p>
+					<p class="p2" title="100%符合三重安全检测"><i style="background:url(../img/FEvyOoWGwkAE6v0QKy-gcf.jpg) no-repeat;"></i>100%符合三重安全检测</p>
+					<p class="p3" title="100%中华保险正品承保"><i style=" background:url(../img/OKUYS8AXXkiqQdK7wyVawF.jpg) no-repeat;"></i>100%中华保险正品承保</p>
+				</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+			<!--左右块-->
+			<div class="proMain shareW">
+				<div class="brandLeft xqLeft">
+					<div class="brandInfo" id="div_brandCategory">
+						<h3>荷兰牛栏Nutrilon</h3>
+						<div>
+							<a>
+								<img src="../img/brand_img.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="brandInfo" id="div_newgoods">
+						<h3>新品抢先看</h3>
+					</div>
+				</div>
+				<div class="proRight">
+					<div class="hotZoneTop" id="div_hotZoneTop">
+						<h3>爆款推荐专区</h3>
+						<div class="hotLeft">
+							<a title="【满108元减19元】Clinie 可莱丝动物卡通面膜--粉色 10片/盒" class="a01">
+								<img src="../img/ijd5oYCo646v1M80mFkg3X.jpg" width="190" height="380">
+								<span>
+
+								<span class="sNow">108</span>
+								</span>
+							</a>
+						</div>
+						<div class="hotCenter">
+							<a title="乐迪滑行飞机（新品-红色）- 正版奥迪双钻超级飞侠 合金滑行玩具" class="a02">
+								<img src="../img/Uo-KFF8Cz4A3FIHtLa-YjB.jpg" width="190" height="190">
+								<span>
+
+								<span class="sNow">22</span>
+								</span>
+							</a>
+							<a title="【无酒精不刺激】德国NUK湿巾 3包特惠装 共240片中文版" class="a03">
+								<img src="../img/XG5o01WuwkE1Fe-DjmW0xv.jpg" width="385" height="190">
+								<span>
+
+								<span class="sNow">52</span>
+								</span>
+							</a>
+							<a title="美国Gerber嘉宝六种水果蔬菜混合酸奶溶豆28g*2" class="a04">
+								<img src="../img/dLt_pcIASkM_6wl9U7ajWS.jpg" width="385" height="190">
+								<span>
+
+								<span class="sNow">69</span>
+								</span>
+							</a>
+							<a title="韩国保宁B&amp;B洗衣皂甘菊香200g/块*3" class="a05">
+								<img src="../img/NrosqXI0x-UL3iuAg7ltr-.jpg" width="190" height="190">
+								<span>
+
+								<span class="sNow">72</span>
+								</span>
+							</a>
+						</div>
+						<div class="hotRight">
+							<a title="【娜扎同款】韩国RE CIPE水晶防晒保湿液 150ml" class="a06">
+								<img src="../img/Eht6K8m1tOUSbO0NwzrGhJ.jpg" width="190" height="380">
+								<span>
+
+								<span class="sNow">58</span>
+								</span>
+							</a>
+						</div>
+						<div class="clear">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--购物车-->
+			<div class="gou-cart" style="right: 0;">
+
+			</div>
+			<!--底部-->
+			<div id="footer" class="footer">
+
+			</div>
+
+			<!--<script src="../js/jquery-3.2.1.js"></script>
+			<script src="../js/header.js"></script>
+			<script src="../js/cart.js"></script>
+			<script src="../js/foot.js"></script>-->
+			<script src="../js/require.js" data-main="../js/detailPage.js"></script>
+			<!--<script src="../lib/jquery.gdsZoom.js"></script>-->
+	</body>
+
+</html>
