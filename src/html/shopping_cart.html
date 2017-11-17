@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/LastMinuteBuy.css" />
+		<link rel="stylesheet" href="../css/shopping_cart.css" />
+	</head>
+
+	<body>
+
+		<header>
+			<div class="top-main">
+				<div class="site-top">
+					<div class="article">
+						<div class="fl" id="DUS">
+							<p class="fl">
+								<span><a href="#"><i class="homeicon"></i>麦乐购首页</a></span>
+								<span><a href="#">请登录</a></span>
+								<span><a href="./html/reg.html" target="_blank" class="red">免费注册</a></span>
+							</p>
+							<p class="fl otherlog">
+								<span>其他登录方式：</span>
+								<a href="#" title="使用QQ账号登录" class="qq"></a>
+								<a href="#" title="使用支付宝账号登录" class="ali"></a>
+								<a href="#" title="使用360账号登录" class="aq360"></a>
+								<a href="#" title="新浪微博登录" class="sina"></a>
+							</p>
+							<p class="fl forSer">
+								<span>联系客服：</span>
+								<span><a class="red">400-666-6600</a></span>
+							</p>
+						</div>
+						<div class="fr">
+							<div class="rg">
+								<div class="mygou">
+									<a href="#">我的麦乐购</a>
+									<i>&nbsp;</i>
+									<ul class="noneCon" style="display: none;">
+										<li>
+											<a href="#">我的订单</a>
+										</li>
+										<li>
+											<a href="#">我的账户</a>
+										</li>
+										<li>
+											<a href="#">麦兜兑换</a>
+										</li>
+										<li>
+											<a href="#">我的优惠券</a>
+										</li>
+										<li>
+											<a href="#">我的收藏</a>
+										</li>
+									</ul>
+								</div>
+								<span>|</span>
+								<div>
+									<i class="front icol1" id="icol1"></i>
+									<a href="#">收藏麦乐购</a>
+								</div>
+								<span>|</span>
+								<div>
+									<a href="#">妈妈推广计划</a>
+								</div>
+								<span>|</span>
+								<div class="mygou">
+									<i class="front" id="iphone"></i>
+									<a href="#">手机麦乐购</a>
+									<div class="noneCon" style="padding:0;display: none;">
+										<img src="./css/img/kASE5wkAWOMPY2Cqn9e-r-.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<div class="settleTop">
+			<div class="settleTopMain">
+				<div class="m6goLogo">
+					<a href="#"><img src="../img/logo.gif" width="260" height="83" /></a>
+					<div class="stepCarNew">
+						<img src="../img/360截图16710518575854.png" alt="" />
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--购物车-->
+		<div class="minHeight">
+			<div class="settleMain">
+				<h4>购物车</h4>
+				<form action="" id="CartWindow">
+					<div class="settleCont">
+						<p class="allCho">
+							<input type="checkbox" checked="checked" name="qx" />全选
+						</p>
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabListSettle">
+							<thead>
+								<tr>
+									<td width="50%">
+										<input type="checkbox" checked="checked"></ipnut>由麦乐购发货
+									</td>
+									<td width="15%">单价</td>
+									<td width="15%">数量</td>
+									<td width="10%">小计</td>
+									<td width="10%">操作</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="by">
+									<td colspan="5" class="saleTd">
+										<div name="baoyou_0"><em>包邮</em>全场包邮<span id="selfPostage">已包邮</span></div>
+									</td>
+								</tr>
+								<tr class="by">
+									<td colspan="5" style="height:10px; padding:0;"></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="settleInfo">
+							<ul></ul>
+						</div>
+						<div class="carAccount">
+							<div class="carAccountMain">
+								<div class="accountL">
+									<span><input type="checkbox" name="qx" checked="checked">全选</span>
+									<span>
+                    					<a id="Submit1">清空购物车</a>
+                					</span>
+									<span>
+                    					<a href="/">继续购物</a>
+                					</span>
+								</div>
+								<div class="accountR">
+									<span name="MScore">
+										获得麦豆：<strong></strong>
+									</span>
+									<span name="save">
+	                					<span id="subGoodsCount_span" style=" display:none;" data-tempdata="0+0">7</span>
+										<span style="display:none">$MJSum&lt;0&gt;</span>
+									</span>
+									<span name="total">
+					               		<i></i>件商品总计：
+	                					<em></em>
+	            					</span>
+									<input type="button" id="A1" class="accountBtn" value="去结算" style="background-color: rgb(207, 46, 19);">
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="footer" id="footer">
+
+		</div>
+
+		<script src="../js/require.js" data-main="../js/shopping_cart"></script>
+	</body>
+
+</html>

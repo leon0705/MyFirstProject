@@ -240,6 +240,8 @@ section.content.zoom { width: 1190px; margin: 0 auto; }
 
 .brandList .brandRight .result li .price-info del { text-decoration: line-through; }
 
+.brandList .brandRight .result li .unit-price { border-left: 1px solid #c91f00; font-size: 12px; display: inline-block; height: 12px; line-height: 12px; padding-left: 5px; margin-left: 10px; color: #c91f00; text-decoration: none; }
+
 .brandList .brandRight .result li strong { font-size: 16px; line-height: 26px; color: #c91f00; font-family: verdana, geneva, sans-serifn; }
 
 .brandList .brandRight .result li .market-price { border-left: 1px solid #ccc; font-size: 12px; display: inline-block; height: 12px; line-height: 12px; margin-left: 10px; color: #999; }
@@ -247,6 +249,10 @@ section.content.zoom { width: 1190px; margin: 0 auto; }
 .brandList .brandRight .result li p { line-height: 16px; width: 185px; height: 32px; overflow: hidden; margin: 0 auto; }
 
 .brandList .brandRight .result li p a { font-size: 12px; color: #444444; line-height: 16px; font-family: "microsoft yahei"; line-height: 16px; height: 32px; }
+
+.brandList .brandRight .result li p a .good-count { position: relative; display: inline-block; padding-right: 8px; margin-right: 8px; font-weight: 400; color: #ce110f; }
+
+.brandList .brandRight .result li p a .good-count i { position: absolute; right: 0; top: 50%; border-right: 1px solid #ce110f; height: 10px; margin-top: -5px; }
 
 .brandList .brandRight .result li .activeTag { position: relative; height: 20px; width: 185px; margin: 5px auto 0; }
 
@@ -256,6 +262,24 @@ section.content.zoom { width: 1190px; margin: 0 auto; }
 
 .brandList .brandRight .result li .btn { position: absolute; bottom: 0px; background: #fff; display: none; width: 100%; }
 
-.brandList .brandRight .result li .btn input { background: url(../img/assBtn.png) no-repeat; width: 119px; height: 30px; color: #fff; padding-left: 20px; font-family: "宋体"; margin-left: 26px; margin-right: 20px; }
+.brandList .brandRight .result li .btn input { background: url(../img/assBtn.png) no-repeat; width: 119px; height: 33px; color: #fff; padding-left: 20px; font-family: "宋体"; margin-left: 26px; margin-right: 20px; }
 
-.brandList .brandRight .result li .btn a { color: #999; padding-left: 15px; vertical-align: -2px; }
+.brandList .brandRight .result li .btn a { background: url(../img/scPng.png) no-repeat 0px -76px; color: #999; padding-left: 15px; vertical-align: -2px; }
+
+.carDiv { display: none; position: fixed; width: 420px; background: #fff; height: 170px; box-shadow: #999 0px 0px 20px; z-index: 9999; left: 300px; padding: 15px 10px 15px 40px; }
+
+.carDiv .close { float: right; background: url(../img/mainCon.png) no-repeat -160px -221px; width: 16px; height: 15px; text-indent: -9999px; }
+
+.carDiv p.tex { color: #000; line-height: 24px; padding-left: 20px; padding-top: 30px; }
+
+.carDiv p.tex i { background: url(../img/mainCon.png) no-repeat -75px -258px; width: 44px; height: 36px; display: inline-block; float: left; margin-top: 5px; margin-right: 10px; }
+
+.carDiv p.tex span { display: block; }
+
+.carDiv p.tex span.bold { font-weight: bold; color: #000; font-size: 14px; }
+
+.carDiv p.btn { margin-top: 20px; margin-left: 70px; }
+
+.carDiv p.btn a.addBtn { height: 34px; width: 120px; background: #cc1d00; line-height: 34px; text-align: center; color: #fff; font-weight: bold; font-size: 15px; font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif; display: inline-block; margin-right: 15px; }
+
+.carDiv p.btn a.goBuy { display: inline-block; line-height: 32px; width: 90px; height: 32px; background: #fff; border: 1px solid #ddd; text-align: center; }

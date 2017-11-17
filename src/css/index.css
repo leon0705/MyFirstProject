@@ -392,6 +392,50 @@ body { margin: 0; padding: 0; }
 
 .cart-main-list .shopcar { position: relative; background: #DDDDDD; height: 100%; font-family: "microsoft yahei"; }
 
+.cart-main-list .shopcar .gou-moTop { height: 30px; line-height: 30px; padding: 0 10px; background: #eee; }
+
+.cart-main-list .shopcar .gou-moTop a { float: right; color: #333; }
+
+.cart-main-list .shopcar .gou-moTop .gou-chk { float: left; margin-right: 5px; }
+
+.cart-main-list .shopcar .cart-order-main { padding: 0 0; height: 100%; overflow: hidden; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list { width: 100%; overflow-x: hidden; padding: 0 12px 0 0; overflow-y: auto; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list h3 { font-family: "microsoft yahei"; text-decoration: none; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list h3.sendgod { line-height: 30px; padding: 0 10px; font-size: 13px; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list h3.sendgod span { padding: 3px 10px; height: 18px; line-height: 18px; border-radius: 4px; background: #f26b67; margin: 3px 0 0 5px; color: #fff; float: right; font-family: "microsoft yahei"; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list h3.name { height: 36px; width: 185px; overflow: hidden; line-height: 18px; margin-left: 10px; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list .gouOrder { overflow: hidden; clear: both; position: relative; zoom: 1; padding: 5px 10px; border-bottom: 1px dashed #e1e1e1; background: #f2f2f2; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list .gouOrder.last { border-bottom: none; margin-bottom: 10px; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list .gouOrder div { float: left; overflow: hidden; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list .gouOrder div.cartItem img { width: 50px; height: 50px; border: 1px solid #ccc; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list .gouOrder div.proInfo { width: 190px; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list .gouOrder div.proInfo h3.name { height: 36px; width: 185px; overflow: hidden; line-height: 18px; margin-left: 10px; }
+
+.cart-main-list .shopcar .cart-order-main .cart-order-list .gouOrder div.proInfo p.price_count { text-align: right; font-weight: bold; }
+
+.cart-bills { padding: 0 8px; height: 50px; position: absolute; width: 264px; bottom: 0px; background: #ccc; }
+
+.cart-bills p { float: left; height: 36px; padding-top: 8px; width: 110px; }
+
+.cart-bills p span { line-height: 18px; display: block; }
+
+.cart-bills p span.price { color: #CA3619; font-weight: bold; }
+
+.cart-bills .goubill { height: 32px; margin-top: 10px; line-height: 32px; cursor: pointer; width: 145px; float: right; background: #cc1d00; text-align: center; }
+
+.cart-bills .goubill .cartBtn { color: #fff; margin: 0 auto; font-size: 14px; font-weight: bold; text-align: center; line-height: 30px; }
+
 .nopublic { height: 100%; width: 100%; background: #ddd; overflow: hidden; }
 
 .nopublic .nothing { position: relative; top: 40%; height: 250px; width: 220px; margin: -220px auto 0; color: #999; font-size: 14px; text-align: center; }

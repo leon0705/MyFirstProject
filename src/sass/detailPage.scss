@@ -91,7 +91,7 @@
         display: inline;
         position: relative;
         margin-right: 8px;
-        ul { 
+        ul {
             li {
                 float: left;
                 margin-right: 0px;
@@ -180,6 +180,21 @@
         color: #444444;
         line-height: 1.5em;
         font-family: "microsoft yahei", verdana, arial, helvetica, sans-serif;
+        b {
+            color: #de2507;
+            padding-right: 8px;
+            margin-right: 8px;
+            position: relative;
+            border-right: 1px solid #de2507;
+            i {
+                position: absolute;
+                display: block;
+                right: 0px;
+                height: 18px;
+                top: 50%;
+                margin-top: -9px;
+            }
+        }
     }
     span {
         font-size: 14px;
@@ -207,6 +222,9 @@
         &.bgGray {
             background: #f7f7f7;
         }
+        &.sumPriceOld {
+            font-family: Verdana, Geneva, sans-serif;
+        }
         &.sumPriceNow {
             font {
                 float: left;
@@ -229,6 +247,13 @@
                 padding-right: 5px;
                 display: inline-block;
                 float: left;
+                &.unit-price {
+                    font-size: 12px;
+                    margin: 2px 0 0 5px;
+                    padding-left: 8px;
+                    font-weight: 400;
+                    position: relative;
+                }
             }
             .iblock {
                 display: inline-block;
@@ -483,6 +508,7 @@
 
 del {
     text-decoration: line-through;
+    font-size: 12px;
 }
 
 .proMain {

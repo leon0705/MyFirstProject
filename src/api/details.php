@@ -7,21 +7,33 @@
  */
     include 'connect.php';
     
-    $market = isset($_GET['market']) ? $_GET['market'] : '';
-    $price = isset($_GET['price']) ? $_GET['price'] : '';
-    $dprice = isset($_GET['dprice']) ? $_GET['dprice'] : '';
-    $gid = isset($_GET['gid']) ? $_GET['gid'] : '';
-    $subject = isset($_GET['subject']) ? $_GET['subject'] : '';
-    $title = isset($_GET['title']) ? $_GET['title'] : '';
-    $href = isset($_GET['href']) ? $_GET['href'] : '';
-    // $weight = isset($_GET['weight']) ? $_GET['weight'] : '';
-    // $fomats = isset($_GET['fomats']) ? $_GET['fomats'] : '';
-    $stock = isset($_GET['stock']) ? $_GET['stock'] : '';
-    $site = isset($_GET['site']) ? $_GET['site'] : '';
-    $img = isset($_GET['img']) ? $_GET['img'] : '';
-    $c_photo = isset($_GET['c_photo']) ? $_GET['c_photo'] : '';
+    $id = isset($_GET['id']) ? $_GET['id'] : '';
+//	$newprice = isset($_GET['newprice']) ? $_GET['newprice'] : '';
+//	$oldprice = isset($_GET['oldprice']) ? $_GET['oldprice'] : '';
+//	$title = isset($_GET['title']) ? $_GET['title'] : '';
+//	$pack = isset($_GET['pack']) ? $_GET['pack'] : '';
+//	$title = isset($_GET['title']) ? $_GET['title'] : '';
+//	$Dan = isset($_GET['Dan']) ? $_GET['Dan'] : '';
+//	$sale = isset($_GET['sale']) ? $_GET['sale'] : '';
+//	$fs_type = isset($_GET['1fs_type']) ? $_GET['1fs_type'] : '';
+//	$sc_type = isset($_GET['2sc_type']) ? $_GET['2sc_type'] : '';
+//	$rd_type= isset($_GET['3rd_type']) ? $_GET['3rd_type'] : '';
+//	$th_type = isset($_GET['4th_type']) ? $_GET['4th_type'] : '';
+//	$eva = isset($_GET['eva']) ? $_GET['eva'] : '';
+//	$z_img_1 = isset($_GET['z_img_1']) ? $_GET['z_img_1'] : '';
+//	$z_img_2 = isset($_GET['z_img_2']) ? $_GET['z_img_2'] : '';
+//	$z_img_3 = isset($_GET['z_img_3']) ? $_GET['z_img_3'] : '';
+//	$z_img_4 = isset($_GET['z_img_4']) ? $_GET['z_img_4'] : '';
+//	$z_img_5 = isset($_GET['z_img_5']) ? $_GET['z_img_5'] : '';
+//	$z_img_6 = isset($_GET['z_img_6']) ? $_GET['z_img_6'] : '';
+//	$z_img_7 = isset($_GET['z_img_7']) ? $_GET['z_img_7'] : '';
+//	$l_img = isset($_GET['l_img']) ? $_GET['l_img'] : '';
+//	$s_title = isset($_GET['s_title']) ? $_GET['s_title'] : '';
+//	$d_img = isset($_GET['d_img']) ? $_GET['d_img'] : '';
+//	$time_stamp = isset($_GET['time_stamp']) ? $_GET['time_stamp'] : '';
 
-    $sql = "select * from dog_goodlist";
+	//获取数据库中相应的数据
+    $sql = "select * from goodslist where id = $id ";
 
 
     // 获取查询结果

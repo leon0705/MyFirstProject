@@ -1,6 +1,6 @@
 require(['config'], function() {
 	
-	require(['jquery','load','com'], function($) {
+	require(['jquery','load'], function($) {
 
 		$('#floorBox').load('./html/floor.html', function() {
 

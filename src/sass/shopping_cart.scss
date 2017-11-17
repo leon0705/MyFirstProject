@@ -1,0 +1,261 @@
+@import '_base';
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+body,
+div {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+    line-height: 19px;
+    font-family: arial, sans-serif;
+}
+
+.settleTop {
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid #d10000;
+    .settleTopMain {
+        width: 1000px;
+        margin: 0 auto;
+        .m6goLogo {
+            padding-top: 20px;
+            img {
+                float: left;
+            }
+        }
+        .stepCarNew {
+            float: right;
+            //          margin-top: 25px;
+            img {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.minHeight {
+    min-height: 500px;
+    .settleMain {
+        width: 1000px;
+        margin: 0 auto;
+        border: 1px solid #c97070;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        h4 {
+            background: #c97070;
+            height: 28px;
+            line-height: 28px;
+            padding-left: 15px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Microsoft Yahei, "微软雅黑";
+        }
+        a {
+            color: #0064ed;
+            font-size: 12px;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        .settleCont {
+            padding: 20px;
+            p {
+                &.allCho {
+                    input {
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .tabListSettle {
+                width: 100%;
+                margin: 10px 0 0 0;
+                thead {
+                    td {
+                        background-color: #eee;
+                        height: 28px;
+                        line-height: 28px;
+                        color: #444;
+                        font-size: 12px;
+                        padding: 0px 5px;
+                        input {
+                            vertical-align: middle;
+                            margin: 0px 10px 0px 5px;
+                        }
+                    }
+                }
+                td {
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    a {
+                        &.sum {
+                            display: inline-block;
+                            border: 1px solid #ddd;
+                            background-color: #eee;
+                            width: 20px;
+                            height: 24px;
+                            line-height: 24px;
+                            text-align: center;
+                            color: #666;
+                            text-decoration: none;
+                            font-size: 14px;
+                            vertical-align: middle;
+                        }
+                    }
+                    input {
+                        &.sum {
+                            border: 1px solid #ddd;
+                            width: 40px;
+                            height: 24px;
+                            line-height: 24px;
+                            display: inline-block;
+                            text-align: center;
+                            font-size: 14px;
+                            vertical-align: middle;
+                            margin: 0px;
+                            border-left: none;
+                            border-right: none;
+                        }
+                    }
+                    &.saleTd {
+                        padding: 3px;
+                        div {
+                            background: #e0f2f1;
+                            border-radius: 5px;
+                            height: 28px;
+                            line-height: 28px;
+                            color: #00a5b1;
+                            em {
+                                display: inline-block;
+                                background: #6bcbd2;
+                                line-height: 20px;
+                                padding: 0px 8px;
+                                height: 20px;
+                                text-align: center;
+                                color: #fff;
+                                font-size: 12px;
+                                margin: 4px 8px;
+                                float: left;
+                                border-radius: 5px;
+                            }
+                            span {
+                                display: inline-block;
+                                border: 1px solid #74ced4;
+                                background: #fff;
+                                line-height: 20px;
+                                padding: 0px 4px;
+                                height: 20px;
+                                text-align: center;
+                                color: #74ced4;
+                                font-size: 12px;
+                                margin: 3px 20px;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    p {
+                        &.p1 {
+                            padding-left: 15px;
+                            line-height: 16px;
+                            max-height: 32px;
+                            overflow: hidden;
+                            color: #444;
+                            width: 480px;
+                        }
+                        &.car {
+                            width: 360px;
+                        }
+                    }
+                    span {
+                        font-family: Verdana, Geneva, sans-serif;
+                        color: #444;
+                        font-size: 14px;
+                        font-weight: bold;
+                        &.red {
+                            color: #e52100;
+                        }
+                    }
+                    .divGoods {
+                        float: left;
+                        width: auto;
+                        position: relative;
+                        input {
+                            margin: 15px 10px 0 0;
+                        }
+                    }
+                }
+            }
+            ul {
+                padding: 8px 0;
+            }
+            .carAccount {
+                position: relative;
+                height: 45px;
+                .carAccountMain {
+                    position: absolute;
+                    width: 1000px;
+                    background-color: #f0f0f0;
+                    left: -20px;
+                    height: 45px;
+                    top: 0;
+                    .accountL {
+                        float: left;
+                        span {
+                            display: inline-block;
+                            padding-left: 30px;
+                            line-height: 45px;
+                            input {
+                                vertical-align: middle;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    .accountR {
+                        float: right;
+                        span {
+                            color: #444;
+                            padding-right: 15px;
+                            display: inline-block;
+                            i {
+                                color: #E52100;
+                                font-family: verdana, geneva, sans-serifs;
+                                font-style: normal;
+                                font-size: 13px;
+                            }
+                            em {
+                                color: #e52100;
+                                font-family: Verdana, Geneva, sans-serif;
+                                font-style: normal;
+                                font-size: 20px;
+                                font-weight: bold;
+                                vertical-align: middle;
+                            }
+                        }
+                        input {
+                            display: inline-block;
+                            width: 140px;
+                            height: 45px;
+                            background-color: #cf2e13;
+                            text-align: center;
+                            line-height: 45px;
+                            color: #fff;
+                            font-family: Microsoft Yahei, "微软雅黑";
+                            font-size: 17px;
+                            border: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
