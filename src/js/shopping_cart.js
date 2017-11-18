@@ -8,7 +8,7 @@ require(['config'], function() {
 
 		render();
 
-		$('tbody tr').on('click','.deleteGood', function() {
+		$('tbody tr').on('click', '.deleteGood', function() {
 			console.log(11);
 			let $targetId = $(this).closest('tr').find('.divGoods input').attr('data-goodsid');
 			//遍历数组，找到与当前点击对象元素的id相同的对象
@@ -26,15 +26,29 @@ require(['config'], function() {
 			Cookie.set('datalist', JSON.stringify(datalist), now);
 
 			render();
+
+		})
+
+		//清空购物车
+		$('#Submit1').on('click', function() {
 			
+			datalist.splice(0);
+	
+			var now = new Date();
+			//给cookie设置一个过期时间，否则刷新的时候所有商品都会消失
+
+			now.setDate(now.getDate() + 8);
+			Cookie.set('datalist', JSON.stringify(datalist), now);
+
+			render();
 		})
 
 		//
 		function render() {
 			console.log(22);
 			// 计算总价
-			var totalPrice = 0;
 
+			var totalPrice = 0;
 			$('#CartWindow .tabListSettle tbody').empty();
 
 			$('#CartWindow .tabListSettle tbody').append(datalist.map(function(item) {
@@ -45,6 +59,7 @@ require(['config'], function() {
 				<tr class="no">
 					<td>
 						<div class="divGoods">
+							<div class="mytotalp" style="display:none">${totalPrice}</div>
 							<input type="checkbox" autocomplete="off" data-goodsid="${item.id}" checked="checked">
 						</div>
 						<div class="divGoods">
@@ -69,7 +84,7 @@ require(['config'], function() {
 					</td>
 					<td align="center" valign="middle">                                                                                 
 						<a class="sum" title="减一">-</a>
-                        <input type="text" class="sum" id="btn_cha" operation="num" name="txtChange" maxlength="4" style="width:30px" value="1">
+                        <input type="text" class="sum" id="btn_cha" operation="num" name="txtChange" maxlength="4" style="width:30px" value="${item.qty}">
                         <a class="sum" title="加一">+</a>
                     </td>
                     <td align="center" valign="middle">
@@ -81,8 +96,15 @@ require(['config'], function() {
                 </tr>
 				`
 			}).join(''))
-			
-		}
 
+			console.log(totalPrice)
+		}
+		let c_totalqty = $('.tabListSettle tbody').find('.no').length;
+		let $c_r_totalPrice = $('.tabListSettle tbody').find('.mytotalp').last().text();
+		console.log($c_r_totalPrice)
+		$('.accountR .acc_r_total').find('em').text($c_r_totalPrice);
+		$('.accountR .acc_r_total').find('i').text(c_totalqty);
+		$('.accountR span').eq(0).find('strong').text(parseInt($c_r_totalPrice/100));
+		
 	});
 });

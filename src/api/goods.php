@@ -1,6 +1,9 @@
 <?php
 	include 'connect.php';
 	
+	$orDer = isset($_GET['order']) ? $_GET['order'] : '';
+	$type = isset($_GET['type']) ? $_GET['type'] : '';
+	
 	$id = isset($_GET['id']) ? $_GET['id'] : '';
 	$newprice = isset($_GET['newprice']) ? $_GET['newprice'] : '';
 	$oldprice = isset($_GET['oldprice']) ? $_GET['oldprice'] : '';
@@ -26,24 +29,74 @@
 	$d_img = isset($_GET['d_img']) ? $_GET['d_img'] : '';
 	$time_stamp = isset($_GET['time_stamp']) ? $_GET['time_stamp'] : '';
 	
-	$sql = "select * from goodslist";
-
-	// 获取查询结果
-	$result = $conn->query($sql);
-
-	// 使用查询结果集
-	$row = $result->fetch_all(MYSQLI_ASSOC);
+//	mysql> SELECT * FROM goodslist ORDER BY newprice ASC; 升序
+//	mysql> SELECT * FROM goodslist ORDER BY sale DESC;	降序
 	
-	//释放查询结果集
-    $result->close();
-
-    //把结果输出到前台
-    echo json_encode($row,JSON_UNESCAPED_UNICODE);
-
-
-	// 释放查询内存(销毁)
-	//$result->free();
-
-	//关闭连接
-	$conn->close();
+	if($orDer === '') {
+		
+		$sql = "select * from goodslist";
+	
+		// 获取查询结果
+		$result = $conn->query($sql);
+	
+		// 使用查询结果集
+		$row = $result->fetch_all(MYSQLI_ASSOC);
+		
+		//释放查询结果集
+	    $result->close();
+	
+	    //把结果输出到前台
+	    echo json_encode($row,JSON_UNESCAPED_UNICODE);
+	
+	
+		// 释放查询内存(销毁)
+		//$result->free();
+	
+		//关闭连接
+		$conn->close();
+	}else if ($orDer === 'asc') {
+				
+		$sql = "select * from goodslist ORDER BY $type ASC";
+	
+		// 获取查询结果
+		$result = $conn->query($sql);
+	
+		// 使用查询结果集
+		$row = $result->fetch_all(MYSQLI_ASSOC);
+		
+		//释放查询结果集
+	    $result->close();
+	
+	    //把结果输出到前台
+	    echo json_encode($row,JSON_UNESCAPED_UNICODE);
+	
+	
+		// 释放查询内存(销毁)
+		//$result->free();
+	
+		//关闭连接
+		$conn->close();
+	}else if ($orDer === 'desc') {
+		
+		$sql = "select * from goodslist ORDER BY $type DESC";
+	
+		// 获取查询结果
+		$result = $conn->query($sql);
+	
+		// 使用查询结果集
+		$row = $result->fetch_all(MYSQLI_ASSOC);
+		
+		//释放查询结果集
+	    $result->close();
+	
+	    //把结果输出到前台
+	    echo json_encode($row,JSON_UNESCAPED_UNICODE);
+	
+	
+		// 释放查询内存(销毁)
+		//$result->free();
+	
+		//关闭连接
+		$conn->close();
+	}
 ?>

@@ -38,11 +38,12 @@ require(['config'], function() {
 
 					//左侧图片
 					$('#spec-n1').find('img').attr('src', `${item.z_img_fc}`);
+					CloudZoom.quickStart();
+
 					$('#spec-n5 .list-h li').eq(0).find('img').attr('src', `${item.z_img_sc}`);
 					$('#spec-n5 .list-h li').eq(1).find('img').attr('src', `${item.z_img_rd}`);
 					$('#spec-n5 .list-h li').eq(2).find('img').attr('src', `${item.z_img_th}`);
-					$('#spec-n5 .list-h li').eq(3).find('img').attr('src', `${item.z_img_ft}`);
-
+					$('#spec-n5 .list-h li').eq(3).find('img').attr('src', `${item.z_img_fc}`);
 					//标题
 					//$('.goodsName h1 b').text(`${item.pack}`);
 					$('.goodsName h1').html(`<b>${item.pack}件装 </b>${item.title}`);
@@ -73,7 +74,13 @@ require(['config'], function() {
 			let $self = $(this);
 			let $t_l_imgsrc = $(this).find('img').attr('src');
 			//			console.log($t_l_imgsrc)
-			$('#spec-n1').find('img').attr("src", $t_l_imgsrc);
+			$('#spec-n1').find('img').attr({
+				src: $t_l_imgsrc
+			});
+
+			document.querySelector("#spec-n1 img").setAttribute('data-cloudzoom', `zoomImage:'${$t_l_imgsrc}'`);
+
+			CloudZoom.quickStart();
 
 		})
 
@@ -102,13 +109,6 @@ require(['config'], function() {
 			$('#Amount').val($oNum);
 		})
 
-		//放大镜
-		$('#spec-n1').on('mouseenter', function() {
-			$('.jqZoomPup').toggle();
-		}).on('mouseleave', function() {
-			$('.jqZoomPup').toggle();
-		})
-
 		//点击添加到购物车
 		$('#buyA').on('click', function() {
 
@@ -125,8 +125,8 @@ require(['config'], function() {
 			var $price = $('#sGoodsPrice').text();
 			var $qty = $('#Amount').val();
 			var currentIdx;
-			console.log($imgUrl,$title,$price,$qty)
-			
+			console.log($imgUrl, $title, $price, $qty)
+
 			//这步判断是否有相同的商品在数组中
 			//some方法用于检测数组中的元素是否满足指定条件，有则返回true 否则 false
 

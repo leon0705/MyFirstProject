@@ -7,7 +7,7 @@
 
 .shareW { width: 1190px; overflow: hidden; margin: 0 auto; }
 
-.productInfo .preview { float: left; width: 362px; position: relative; z-index: 11; }
+.productInfo .preview { float: left; width: 362px; position: relative; z-index: 1; }
 
 .jqzoom { position: relative; padding: 0; width: 350px; height: 350px; border: 1px solid #ccc; }
 

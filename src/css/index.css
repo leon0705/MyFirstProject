@@ -424,6 +424,8 @@ body { margin: 0; padding: 0; }
 
 .cart-main-list .shopcar .cart-order-main .cart-order-list .gouOrder div.proInfo p.price_count { text-align: right; font-weight: bold; }
 
+.gou-cart a, .gou-cart p, .gou-cart li, .gou-cart div, .gou-cart h3 { font-family: "microsoft yahei"; text-decoration: none; }
+
 .cart-bills { padding: 0 8px; height: 50px; position: absolute; width: 264px; bottom: 0px; background: #ccc; }
 
 .cart-bills p { float: left; height: 36px; padding-top: 8px; width: 110px; }

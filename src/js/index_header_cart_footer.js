@@ -32,14 +32,14 @@ jQuery(function($) {
 
 					let $li = $('<li/>').html(`<i class="nav-icon ${item.bg} "></i>
 										<h3>
-											<a href="#">
+											<a href="./html/goodslist.html">
 												${item.h3}
 											</a>
 										</h3>
 										<p>
-											<a href="#">${item.type1}</a>
-											<a href="#">${item.type2}</a>
-											<a href="#">${item.type3}</a>
+											<a href="./html/goodslist.html">${item.type1}</a>
+											<a href="./html/goodslist.html">${item.type2}</a>
+											<a href="./html/goodslist.html">${item.type3}</a>
 										</p>`);
 					$ul.append($li);
 

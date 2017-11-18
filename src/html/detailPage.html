@@ -4,11 +4,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<!--<script src="../js/jquery-3.2.1.js"></script>-->
 		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/LastMinuteBuy.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/detailPage.css" />
-		<link rel="stylesheet" href="../lib/jquery.gdsZoom.css" />
+		<link rel="stylesheet" href="../lib/cloudzoom.css" />
+
 	</head>
 
 	<body>
@@ -25,11 +27,11 @@
 			<!--图片-->
 			<div class="preview">
 				<div class="jqzoom" id="spec-n1">
-					<img src="../img/d_goodsImg_nt_1.jpg" height="350" width="350" class="CoverGoodsVideoImg" />
+					<img src="../img/d_goodsImg_nt_1.jpg" height="350" width="350" class="CoverGoodsVideoImg cloudzoom" data-cloudzoom="zoomImage:'../img/d_goodsImg_nt_1.jpg'" />
 					<div class="jqZoomPup" style="display: none;width: 175px; height: 175px; visibility: visible; top: 0px; left: 0px;">&nbsp;</div>
 				</div>
 				<div class="zoomdiv" style="top: 0px; left: 370px; width: 400px; height: 400px; display: none;">
-						<img class="bigimg" src="../img/d_goodsImg_nt_2.jpg">
+					<img class="bigimg" src="../img/d_goodsImg_nt_2.jpg">
 				</div>
 				<div id="spec-n5">
 					<div class="control" id="spec-left"></div>
@@ -85,14 +87,14 @@
 					</li>
 					<li class="sumPriceOld bgGray">
 						<div class="dt">价&nbsp;&nbsp;格：</div>
-							<div class="dd">
-								<span>
+						<div class="dd">
+							<span>
 								<del>
 									￥312
 									<del></del>
 								</del>
 							</span>
-							</div>
+						</div>
 					</li>
 					<li class="sumSale bgGray">
 						<div class="dt">促销信息：</div>
@@ -178,97 +180,98 @@
 					<p class="p2" title="100%符合三重安全检测"><i style="background:url(../img/FEvyOoWGwkAE6v0QKy-gcf.jpg) no-repeat;"></i>100%符合三重安全检测</p>
 					<p class="p3" title="100%中华保险正品承保"><i style=" background:url(../img/OKUYS8AXXkiqQdK7wyVawF.jpg) no-repeat;"></i>100%中华保险正品承保</p>
 				</div>
-				</div>
-				<div class="clear"></div>
 			</div>
+			<div class="clear"></div>
 		</div>
-			<!--左右块-->
-			<div class="proMain shareW">
-				<div class="brandLeft xqLeft">
-					<div class="brandInfo" id="div_brandCategory">
-						<h3>荷兰牛栏Nutrilon</h3>
-						<div>
-							<a>
-								<img src="../img/brand_img.jpg" alt="" />
-							</a>
-						</div>
-					</div>
-					<div class="brandInfo" id="div_newgoods">
-						<h3>新品抢先看</h3>
+		</div>
+		<!--左右块-->
+		<div class="proMain shareW">
+			<div class="brandLeft xqLeft">
+				<div class="brandInfo" id="div_brandCategory">
+					<h3>荷兰牛栏Nutrilon</h3>
+					<div>
+						<a>
+							<img src="../img/brand_img.jpg" alt="" />
+						</a>
 					</div>
 				</div>
-				<div class="proRight">
-					<div class="hotZoneTop" id="div_hotZoneTop">
-						<h3>爆款推荐专区</h3>
-						<div class="hotLeft">
-							<a title="【满108元减19元】Clinie 可莱丝动物卡通面膜--粉色 10片/盒" class="a01">
-								<img src="../img/ijd5oYCo646v1M80mFkg3X.jpg" width="190" height="380">
-								<span>
+				<div class="brandInfo" id="div_newgoods">
+					<h3>新品抢先看</h3>
+				</div>
+			</div>
+			<div class="proRight">
+				<div class="hotZoneTop" id="div_hotZoneTop">
+					<h3>爆款推荐专区</h3>
+					<div class="hotLeft">
+						<a title="【满108元减19元】Clinie 可莱丝动物卡通面膜--粉色 10片/盒" class="a01">
+							<img src="../img/ijd5oYCo646v1M80mFkg3X.jpg" width="190" height="380">
+							<span>
 
 								<span class="sNow">108</span>
-								</span>
-							</a>
-						</div>
-						<div class="hotCenter">
-							<a title="乐迪滑行飞机（新品-红色）- 正版奥迪双钻超级飞侠 合金滑行玩具" class="a02">
-								<img src="../img/Uo-KFF8Cz4A3FIHtLa-YjB.jpg" width="190" height="190">
-								<span>
+							</span>
+						</a>
+					</div>
+					<div class="hotCenter">
+						<a title="乐迪滑行飞机（新品-红色）- 正版奥迪双钻超级飞侠 合金滑行玩具" class="a02">
+							<img src="../img/Uo-KFF8Cz4A3FIHtLa-YjB.jpg" width="190" height="190">
+							<span>
 
 								<span class="sNow">22</span>
-								</span>
-							</a>
-							<a title="【无酒精不刺激】德国NUK湿巾 3包特惠装 共240片中文版" class="a03">
-								<img src="../img/XG5o01WuwkE1Fe-DjmW0xv.jpg" width="385" height="190">
-								<span>
+							</span>
+						</a>
+						<a title="【无酒精不刺激】德国NUK湿巾 3包特惠装 共240片中文版" class="a03">
+							<img src="../img/XG5o01WuwkE1Fe-DjmW0xv.jpg" width="385" height="190">
+							<span>
 
 								<span class="sNow">52</span>
-								</span>
-							</a>
-							<a title="美国Gerber嘉宝六种水果蔬菜混合酸奶溶豆28g*2" class="a04">
-								<img src="../img/dLt_pcIASkM_6wl9U7ajWS.jpg" width="385" height="190">
-								<span>
+							</span>
+						</a>
+						<a title="美国Gerber嘉宝六种水果蔬菜混合酸奶溶豆28g*2" class="a04">
+							<img src="../img/dLt_pcIASkM_6wl9U7ajWS.jpg" width="385" height="190">
+							<span>
 
 								<span class="sNow">69</span>
-								</span>
-							</a>
-							<a title="韩国保宁B&amp;B洗衣皂甘菊香200g/块*3" class="a05">
-								<img src="../img/NrosqXI0x-UL3iuAg7ltr-.jpg" width="190" height="190">
-								<span>
+							</span>
+						</a>
+						<a title="韩国保宁B&amp;B洗衣皂甘菊香200g/块*3" class="a05">
+							<img src="../img/NrosqXI0x-UL3iuAg7ltr-.jpg" width="190" height="190">
+							<span>
 
 								<span class="sNow">72</span>
-								</span>
-							</a>
-						</div>
-						<div class="hotRight">
-							<a title="【娜扎同款】韩国RE CIPE水晶防晒保湿液 150ml" class="a06">
-								<img src="../img/Eht6K8m1tOUSbO0NwzrGhJ.jpg" width="190" height="380">
-								<span>
+							</span>
+						</a>
+					</div>
+					<div class="hotRight">
+						<a title="【娜扎同款】韩国RE CIPE水晶防晒保湿液 150ml" class="a06">
+							<img src="../img/Eht6K8m1tOUSbO0NwzrGhJ.jpg" width="190" height="380">
+							<span>
 
 								<span class="sNow">58</span>
-								</span>
-							</a>
-						</div>
-						<div class="clear">
-						</div>
+							</span>
+						</a>
+					</div>
+					<div class="clear">
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<!--购物车-->
-			<div class="gou-cart" style="right: 0;">
+		<!--购物车-->
+		<div class="gou-cart" style="right: 0;">
 
-			</div>
-			<!--底部-->
-			<div id="footer" class="footer">
+		</div>
+		<!--底部-->
+		<div id="footer" class="footer">
 
-			</div>
+		</div>
 
-			<!--<script src="../js/jquery-3.2.1.js"></script>
-			<script src="../js/header.js"></script>
-			<script src="../js/cart.js"></script>
+		<script src="../js/jquery-3.2.1.js"></script>
+		<!--<script src="../js/header.js"></script>-->
+		<!--<script src="../js/cart.js"></script>
 			<script src="../js/foot.js"></script>-->
-			<script src="../js/require.js" data-main="../js/detailPage.js"></script>
-			<!--<script src="../lib/jquery.gdsZoom.js"></script>-->
+		<script src="../js/require.js" data-main="../js/detailPage.js"></script>
+		<!--<script src="../lib/jquery.gdsZoom.js"></script>-->
+		<script src="../lib/cloudzoom.js"></script>
 	</body>
 
 </html>

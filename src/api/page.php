@@ -4,11 +4,11 @@
 	
 	// 获取前端传过来的数据
 	$pageNo = isset($_GET['pageNo']) ? $_GET['pageNo'] : 1;
-	$qty = isset($_GET['qty']) ? $_GET['qty'] : 10;
+	$qty = isset($_GET['qty']) ? $_GET['qty'] : 12;
 	$cate = isset($_GET['cate']) ? $_GET['cate'] : '';
 
 	// 编写sql语句
-	$sql = "select * from goods";
+	$sql = "select * from goodslist";
 
 	// 利用php条件语句拼接sql
 	if($cate){
@@ -38,7 +38,7 @@
     $res = array(
     	'pageNo'=>$pageNo,
     	'qty'=>$qty,
-    	'total'=>$conn->query('select count(*) from goods')->fetch_row()[0],
+    	'total'=>$conn->query('select count(*) from goodslist')->fetch_row()[0],
     	'data'=>$row,
     	'status'=>200,
     	'msg'=>'success'

@@ -195,7 +195,23 @@
                         margin-right: 6px;
                         text-align: center;
                         text-indent: 0;
-                        &.hover {
+                        &.pricea {
+                        }
+                        &.hoverUp {
+                            background: #cc1d00 url(../img/conlist.png) no-repeat -35px -98px;
+                            border: none;
+                            height: 28px;
+                            padding: 0 20px 0 10px;
+                            color: #fff;
+                        }
+                        &.hoverDown {
+                            background: #cc1d00 url(../img/conlist.png) no-repeat 36px -98px;
+                            border: none;
+                            height: 28px;
+                            padding: 0 20px 0 10px;
+                            color: #fff;
+                        }
+                        &:hover {
                             border: none;
                             height: 28px;
                             background: #cc1d00;

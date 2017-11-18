@@ -11,12 +11,14 @@ require.config({
 		foot:'./foot', 
 		cart:'./cart',
 		header:'./header', 
-		zoom:'../lib/gdsZoom'
+		zoom:'./cloudzoom'
 	},
 	shim: {
 		floor:['load','jquery'],
 		load: ['jquery'],
 		CarS:['com'],
-		foot:['jquery']
+		foot:['jquery'],
+		zoom:['jquery']
+		
 	}
 });

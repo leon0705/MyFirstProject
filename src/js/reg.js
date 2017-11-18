@@ -115,10 +115,15 @@ jQuery(function($) {
 			let Reg = true;
 			//发起异步请求
 
+			//			console.log($surePwd)
+
 			$.ajax({
 				type: "get",
 				url: "../api/MSQL_reg.php",
-				data: `phoneNo=${$mobile}`,
+				data: {
+					phoneNo: $mobile,
+					password: $pwdVal
+				},
 				async: true,
 				success: function(res) {
 					console.log(res);

@@ -215,17 +215,54 @@
             font-weight: normal;
             position: relative;
         }
-        span.rR {
-            float: right;
-            display: block;
-            line-height: 24px;
-            width: 160px;
-            text-align: right;
+        span {
+            &.rR {
+                float: right;
+                display: block;
+                line-height: 24px;
+                width: 160px;
+                text-align: right;
+            }
         }
         ul {
             margin-top: 20px;
         }
         li {
+            &.liLab {
+                position: relative;
+                label {
+                    &.user {
+                        position: absolute;
+                        background: url(../img/tegPng.png) no-repeat 0px -52px;
+                        text-indent: -9999px;
+                        top: 0px;
+                        left: 0px;
+                        display: block;
+                        width: 32px;
+                        height: 32px;
+                    }
+                    &.pass {
+                        position: absolute;
+                        background: url(../img/tegPng.png) no-repeat;
+                        text-indent: -9999px;
+                        top: 0px;
+                        left: 0px;
+                        display: block;
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                input {
+                    &.user {
+                        padding-left: 40px;
+                        width: 240px;
+                    }
+                    &.pass {
+                        padding-left: 40px;
+                        width: 240px;
+                    }
+                }
+            }
             input {
                 border: 1px solid #dedede;
                 color: #999;
@@ -263,6 +300,31 @@
                     line-height: 24px;
                     color: #ff6b52;
                     height: 24px;
+                }
+                &.otherReg {
+                    padding-top: 20px;
+                    color: #999;
+                    a {
+                        background: url(../img/tegPng.png) no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        text-indent: -9999px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin: 0px 6px;
+                        &.qq {
+                            background-position: -26px -128px;
+                        }
+                        &.aliPay {
+                            background-position: -106px -128px;
+                        }
+                        &.ws360 {
+                            background-position: -147px -382px;
+                        }
+                        &.sina {
+                            background-position: -66px -128px;
+                        }
+                    }
                 }
             }
         }
