@@ -27,7 +27,7 @@ require(['config'], function() {
 				console.log(breadCrumb)
 				res.forEach(function(item) {
 
-					let unitPrice = item.newprice / item.pack;
+					let unitPrice = parseInt(item.newprice / item.pack);
 
 					//面包屑
 					$('.breadcrumb')

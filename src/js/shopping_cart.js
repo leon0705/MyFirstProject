@@ -8,9 +8,12 @@ require(['config'], function() {
 
 		render();
 
-		$('tbody tr').on('click', '.deleteGood', function() {
-			console.log(11);
+		$('tbody tr td').on('click', '.deleteGood', function() {
+
+			//			if($(this).find('a').text() === '删除'){
+
 			let $targetId = $(this).closest('tr').find('.divGoods input').attr('data-goodsid');
+			$(this).closest('tr').remove();
 			//遍历数组，找到与当前点击对象元素的id相同的对象
 			datalist.forEach(function(item, idx) {
 				if(item.id === $targetId) {
@@ -25,22 +28,20 @@ require(['config'], function() {
 			now.setDate(now.getDate() + 8);
 			Cookie.set('datalist', JSON.stringify(datalist), now);
 
-			render();
-
 		})
 
 		//清空购物车
 		$('#Submit1').on('click', function() {
-			
+
 			datalist.splice(0);
-	
+
 			var now = new Date();
 			//给cookie设置一个过期时间，否则刷新的时候所有商品都会消失
 
 			now.setDate(now.getDate() + 8);
 			Cookie.set('datalist', JSON.stringify(datalist), now);
 
-			render();
+			$('#CartWindow .tabListSettle tbody').empty();
 		})
 
 		//
@@ -49,9 +50,8 @@ require(['config'], function() {
 			// 计算总价
 
 			var totalPrice = 0;
-			$('#CartWindow .tabListSettle tbody').empty();
 
-			$('#CartWindow .tabListSettle tbody').append(datalist.map(function(item) {
+			$('#CartWindow .tabListSettle tbody').html(datalist.map(function(item) {
 				totalPrice += (item.price * 1) * (item.qty * 1);
 				console.log(item)
 
@@ -99,12 +99,13 @@ require(['config'], function() {
 
 			console.log(totalPrice)
 		}
+
 		let c_totalqty = $('.tabListSettle tbody').find('.no').length;
 		let $c_r_totalPrice = $('.tabListSettle tbody').find('.mytotalp').last().text();
 		console.log($c_r_totalPrice)
 		$('.accountR .acc_r_total').find('em').text($c_r_totalPrice);
 		$('.accountR .acc_r_total').find('i').text(c_totalqty);
-		$('.accountR span').eq(0).find('strong').text(parseInt($c_r_totalPrice/100));
-		
+		$('.accountR span').eq(0).find('strong').text(parseInt($c_r_totalPrice / 100));
+
 	});
 });

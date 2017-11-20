@@ -30,89 +30,46 @@ jQuery(function($) {
 		$pwdVal = $('#pwd').val();
 	});
 
-//	//绑定事件
-//	$('#divCont').on('blur', 'input', function() {
-//		let $self = $(this);
-//
-//		//		console.log($self.val().length)
-//		if($self.text() === '') {
-//			if($self.is('#mobile')) {
-//				$self.closest('li').find('.focusTex').text('请输入手机号');
-//			}
-//			if($self.is('#pwd')) {
-//				$self.closest('li').find('.focusTex').text('请输入密码');
-//
-//			}
-//			if($self.is('#surePwd')) {
-//				$self.closest('li').find('.focusTex').text("请再次输入密码")
-//			}
-//			if($self.is('#code')) {
-//				$self.closest('li').find('.focusTex').text('请输入验证码');
-//			}
-//			qty = false;
-//		}
-//		//当输入框不为空时执行以下代码
-//		if($self.val().length > 0) {
-//			//清空
-//			$self.closest('li').find('.focusTex').text('');
-//
-//			if($self.is('#mobile')) {
-//				$mobile = $('#mobile').val();
-//
-//				if(!/^1[34578]\d{9}$/.test($mobile)) {
-//					$('#mobile').closest('li').find('.focusTex').text('');
-//
-//					$self.closest('li').find('.focusTex').text("手机号格式不正确！").css('color', '#ff6b52');
-//					$sureReg = false;
-//
-//				} else if(/^1[34578]\d{9}$/.test($mobile)) {
-//					$('#mobile').closest('li').find('.focusTex').text('');
-//
-//					//					$self.closest('li').find('.focusTex').text("手机号正确").css('color', '#58bc58');
-//					$sureReg = true;
-//
-//				}
-//
-//			}
-//			//判断确认密码是否正确
-//			if($self.is('#surePwd')) {
-//
-//				$pwdVal = $('#pwd').val();
-//				$surePwd = $('#surePwd').val();
-//
-//				//				console.log($pwdVal, $surePwd)
-//
-//				if($pwdVal != $surePwd) {
-//					$self.closest('li').find('.focusTex').text("两次输入密码不一致！").css('color', '#ff6b52');
-//					qty = false;
-//				} else if($pwdVal === $surePwd) {
-//					$self.closest('li').find('.focusTex').text("密码正确").css('color', '#58bc58');
-//					qty = true;
-//				}
-//			}
-//
-//			//查询验证码
-//			if($self.is('#code')) {
-//
-//				let $code_err = $('#code_err');
-//				let $code = $('#code').val();
-//				let $v_code = $('#Reg_img_verifyCode').text();
-//
-//				if($code != $v_code) {
-//					$self.closest('li').find('.focusTex').text("验证码不正确！！").css('color', '#ff6b52');
-//					qty = false;
-//				} else if($code === $v_code) {
-//					$self.closest('li').find('.focusTex').text("验证码正确！").css('color', '#58bc58');
-//					qty = true;
-//				}
-//			}
-//
-//			console.log(qty)
-//			console.log($sureReg)
-//
-//		}
-//
-//	})
+	//绑定事件
+	$('#loginForm').on('blur', '.liLab', function() {
+		let $self = $(this);
+
+		//		console.log($self.val().length)
+		if($self.find('input').text() === '') {
+			if($self.find('input').is('#username')) {
+				$self.closest('li').find('.focusTex').text('请输入手机号');
+			}
+			if($self.find('input').is('#pwd')) {
+				$self.closest('li').find('.focusTex').text('请输入密码');
+			}
+		}
+		//当输入框不为空时执行以下代码
+		if($self.find('input').val().length > 0) {
+			//清空
+			$self.find('.focusTex').text('');
+
+			if($self.find('input').is('#username')) {
+				$username = $('#username').val();
+
+				if(!/^1[34578]\d{9}$/.test($username)) {
+					$('#username').closest('li').find('.focusTex').text('');
+
+					$self.find('.focusTex').text("手机号格式不正确！").css('color', '#ff6b52');
+					$sureReg = false;
+
+				} else if(/^1[34578]\d{9}$/.test($mobile)) {
+					$('#username').closest('li').find('.focusTex').text('');
+
+
+					$sureReg = true;
+
+				}
+
+			}
+
+		}
+
+	})
 
 	$('#userLogin_A').on('click', function() {
 
